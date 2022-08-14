@@ -1,0 +1,3482 @@
+
+// ==UserScript==
+// @name            ᴘʀᴏᴊᴇᴄᴛ ᴀQᴜᴀ
+// @namespace       -
+// @version         2.3
+// @description     Best Hack 2021!
+// @author          UnLovableZ#2219, Mojaster-X#3139
+// @match          *://moomoo.io/*
+// @match          *://dev.moomoo.io/*
+// @match          *://*sandbox.moomoo.io/*
+// @require https://greasyfork.org/scripts/368273-msgpack/code/msgpack.js?version=598723
+// @require http://code.jquery.com/jquery-3.3.1.min.js
+// @require https://code.jquery.com/ui/1.12.0/jquery-ui.min.js
+// @require https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js
+// @icon    https://img.youtube.com/vi/7bi8gdfxfdY/maxresdefault.jpg
+
+//Update 2.3 Added More Visuals, Menu is more cool
+
+// ==/UserScript==
+
+var YouName = window.prompt("Welcome to goodly hack!","");
+
+$("#mapDisplay").css("background", "url('https://i.pinimg.com/originals/1d/15/d8/1d15d8da8b3b6f3a895828ba2663f409.gif')");
+
+$("#youtuberOf").css({display: "none"});
+
+let newImgG = document.createElement("img");
+newImgG.src = "https://img.youtube.com/vi/7bi8gdfxfdY/maxresdefault.jpg";
+newImgG.style = `position: absolute; bottom: 20px; left: 175px; z-index: 100000; width: 110px; height: 110px; cursor: pointer; border-radius: 50%;`;
+document.body.prepend(newImgG);
+newImgG.addEventListener("click", () => {
+       let w = window.open("https://discord.gg/hMKkxj5", null, `height=650, width=1199, status=yes, toolbar=no, menubar=no, location=no`);
+});
+
+try {
+document.getElementById("moomooio_728x90_home").style.display = "none";
+    $("#moomooio_728x90_home").parent().css({display: "none"});
+} catch (e) {
+  console.log(" removing ad");
+}
+
+unsafeWindow.onbeforeunload = null;
+
+
+({'position':'absolute','bottom':'72px','left':'20px','width':'420px','height':'236.25px','padding-bottom':'18px','margin-top':'0px'});
+
+$('.menuCard').css({'white-space': 'normal',
+                    'text-align': 'center',
+                    'background-color': 'rgba(0, 0, 0, 0.74)',
+                    '-moz-box-shadow': '0px 0px rgba(255, 255, 255, 0)',
+                    '-webkit-box-shadow': '0px 0px rgba(255, 255, 255, 0)',
+                    'box-shadow': '0px 0px rgba(255, 255, 255, 0)',
+                    '-webkit-border-radius': '0px',
+                    '-moz-border-radius': '0px',
+                    'border-radius': '35px',
+                    'margin': '15px',
+                    'margin-top': '15px'});
+
+$('.menuCard').css({'color':'0, 0, 255, 0.3'});
+
+
+$('#menuContainer').css({'white-space': 'normal'});
+
+
+$('#guideCard').css({'color': '#00ffff'});
+
+$('.killCounter').css({'color': '#00ffff'});
+
+$('#nativeResolution').css({'cursor': 'pointer'});
+
+$('#playMusic').css({'cursor': 'pointer'});
+
+$('#skinColorHolder').css({'margin-bottom': '30.75px'});
+
+$('.settingRadio').css({'margin-bottom': '30.75px'});
+
+$('#gameName').css({'color': '#00ffff',
+                    'text-shadow': '0 1px 0 rgba(255, 255, 255, 0), 0 2px 0 rgba(255, 255, 255, 0), 0 3px 0 rgba(255, 255, 255, 0), 0 4px 0 rgba(255, 255, 255, 0), 0 5px 0 rgba(255, 255, 255, 0), 0 6px 0 rgba(255, 255, 255, 0), 0 7px 0 rgba(255, 255, 255, 0), 0 8px 0 rgba(255, 255, 255, 0), 0 9px 0 rgba(255, 255, 255, 0)',
+                    'text-align': 'center',
+                    'font-size': '126px',
+                    'margin-bottom': '-30px'});
+
+$('#loadingText').css({'color': '#00ffff',
+                       'background-color': 'rgba(0, 0, 0, 0.74)',
+                       'padding': '8px',
+                       'right': '150%',
+                       'left': '150%',
+                       'margin-top': '40px'});
+
+$('.ytLink').css({'color': '#00ffff',
+                  'padding': '8px',
+                  'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('.menuLink').css({'color': '#00ffff'});
+
+$('.menuButton').css({'background-color': '#00ffff'});
+
+
+$('#nameInput').css({'border-radius': '0px',
+                     '-moz-border-radius': '0px',
+                     '-webkit-border-radius': '0px',
+                     'border': 'hidden'});
+
+
+$('#serverSelect').css({'cursor': 'pointer',
+                        'color': '#00ffff',
+                        'background-color': '#808080',
+                        'border': 'hidden',
+                        'font-size': '20px'});
+
+$('.menuButton').css({'border-radius': '0px',
+                      '-moz-border-radius': '0px',})
+
+var moomooVer = $('#linksContainer2 .menuLink').html(),
+    hideSelectors = ['#mobileDownloadButtonContainer',
+                     '#followText',
+                     '#smallLinks',
+                     '#linksContainer1',
+                     '#twitterFollow',
+                     '#youtubeFollow',
+                     '#cdm-zone-02',
+                     '#youtuberOf',
+                     '#promoImg',
+                     '#downloadButtonContainer',
+                     '.menuHeader',
+                     '.menuLink',
+                     '.menuHeader:nth-child(5)',
+                     '.menuHeader:nth-child(6)',
+                     '.menuText'
+                     ],
+    css = '#rightCardHolder {display: block!important}',
+    head = document.head || document.getElementsByTagName('head')[0],
+    style = document.createElement('style');
+
+style.type = 'text/css';
+if (style.styleSheet){
+    style.styleSheet.cssText = css;
+} else {
+    style.appendChild(document.createTextNode(css));
+}
+
+for ( let i = 0; i < hideSelectors.length; i++ ) {
+    $(hideSelectors[i]).hide();
+}
+head.appendChild(style);
+$('#linksContainer2').html('<a href="./docs/versions.txt" target="_blank" class="menuLink">' + moomooVer + '</a>');
+
+// document.getElementById("gameUI").style.backgroundImage = "url('')";
+// document.getElementById("mainMenu").style.backgroundImage = "url('')";
+document.getElementById('enterGame').innerHTML = '𝓢𝓣𝓐𝓡𝓣';
+document.getElementById('loadingText').innerHTML = ' . . . . . . . Loading ProJect AQUA . . . . . . . ';
+document.getElementById('nameInput').placeholder = "𝓦𝓻𝓲𝓽𝓮 𝓤𝓼𝓮𝓻𝓷𝓪𝓶𝓮...";
+document.getElementById('chatBox').placeholder = "Ch𝓐t";
+document.getElementById('diedText').innerHTML = '𝓨𝓸𝓾 𝓓𝓘𝓔𝓓';
+document.getElementById('diedText').style.color = "Gold";
+$( "#errorNotification" ).after( '<div id="moddedMenu"><div class="titleMM">ᴘʀᴏᴊᴇᴄᴛ ᴀQᴜᴀ</div><div class="one"><label class="switch"></span></label><div class="two"><div class="text">Sci-Fi Menu<b></b></div></div>');
+
+document.getElementById("storeHolder").style = "height: 1500px; width: 450px;"
+
+document.getElementById('adCard').remove();
+document.getElementById('errorNotification').remove();
+
+document.getElementById("leaderboard").style.color = "#00ffff";
+document.getElementById("gameName").style.color = "#00ffff";
+document.getElementById("setupCard").style.color = "#00ffff";
+document.getElementById("gameName").innerHTML = "⇘】ᴘʀᴏᴊᴇᴄᴛ ᴀQᴜᴀ【⇙"
+document.getElementById("promoImg").remove();
+document.getElementById("scoreDisplay").style.color = "Gold";
+document.getElementById("woodDisplay").style.color = "Brown";
+document.getElementById("stoneDisplay").style.color = "Gray";
+document.getElementById("killCounter").style.color = "Gold";
+document.getElementById("foodDisplay").style.color = "Red";
+document.getElementById("ageText").style.color = "#00ffff";
+document.getElementById("allianceButton").style.color = "#00ffff";
+document.getElementById("chatButton").style.color = "#00ffff";
+document.getElementById("storeButton").style.color = "#00ffff";
+
+$('.menuCard').css({'white-space': 'normal',
+                    'text-align': 'center',
+                    'background-color': 'rgba(0, 0, 255, 0.3)',
+                    '-moz-box-shadow': '0px 0px rgba(255, 255, 255, 3)',
+                    '-webkit-box-shadow': '0px 0px rgba(255, 255, 255, 3)',
+                    'box-shadow': '0px 0px rgba(255, 255, 255, 3)',
+                    '-webkit-border-radius': '0px',
+                    '-moz-border-radius': '0px',
+                    'border-radius': '0px',
+                    'margin': '15px',
+                    'margin-top': '15px'});
+
+$('#menuContainer').css({'blue-space': 'normal'});
+
+$('#nativeResolution').css({'cursor': 'pointer'});
+
+$('#playMusic').css({'cursor': 'pointer'});
+
+$('#guideCard').css({'overflow-y': 'hidden',
+                     'margin-top': 'auto',
+                     'margin-bottom': '30px'});
+
+
+$('#skinColorHolder').css({'margin-bottom': '30.75px'});
+
+$('.settingRadio').css({'margin-bottom': '30.75px'});
+
+
+
+$('#linksContainer2').css({'-webkit-border-radius': '0px 0 0 0',
+                           '-moz-border-radius': '0px 0 0 0',
+                           'border-radius': '0px 0 0 0',
+                           'right': '44%',
+                           'left': '44%',
+                           'background-color': 'rgba(0, 0, 255, 0.3)',
+                           'text-align': 'center',
+                           'bottom': '12px'});
+
+$('#gameName').css({'color': '#00ffff',
+                    'text-shadow': '0 1px 0 rgba(255, 255, 255, 0), 0 2px 0 rgba(0, 0, 255, 0.3), 0 3px 0 rgba(0, 0, 255, 0.3), 0 4px 0 rgba(0, 0, 255, 0.3), 0 5px 0 rgba(0, 0, 255, 0.3), 0 6px 0 rgba(0, 0, 255, 0.3), 0 7px 0 rgba(0, 0, 255, 0.3), 0 8px 0 rgba(0, 0, 255, 0.3), 0 9px 0 rgba(0, 0, 255, 0.3)',
+                    'text-align': 'center',
+                    'font-size': '156px',
+                    'margin-bottom': '-30px'});
+
+$('#loadingText').css({'color': '#00ffff',
+                       'background-color': 'rgba(0, 0, 255, 0.3)',
+                       'padding': '8px',
+                       'right': '150%',
+                       'left': '150%',
+                       'margin-top': '40px'});
+
+$('.ytLink').css({'color': '#144db4',
+                  'padding': '8px',
+                  'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('.menuLink').css({'color': '00ffff'});
+
+$('#nameInput').css({'border-radius': '0px',
+                     '-moz-border-radius': '0px',
+                     '-webkit-border-radius': '0px',
+                     'border': 'hidden'});
+
+$('#serverSelect').css({'cursor': 'pointer',
+                        'color': '#00ffff',
+                        'background-color': 'rgba(0, 0, 255, 0.3)',
+                        'border': 'hidden',
+                        'font-size': '20px'});
+
+$('.menuButton').css({'border-radius': '0px',
+                      '-moz-border-radius': '0px',
+                      '-webkit-border-radius': '0px'});
+
+$('#promoImgHolder').css({'position': 'absolute',
+                          'bottom': '-7%',
+                          'left': '20px',
+                          'width': '420px',
+                          'height': '236.25px',
+                          'padding-bottom': '18px',
+                          'margin-top': '0px'});
+
+$('#adCard').css({'position': 'absolute',
+                  'bottom': '-7%',
+                  'right': '20px',
+                  'width': '420px',
+                  'height': '236.25px',
+                  'padding-bottom': '18px'});
+
+
+$('.menuHeader').css({'color': 'rgba(0, 0, 255, 0.3)'});
+
+$('#killCounter').css({'color': '#ededed'});
+
+$('#diedText').css({'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('#gameCanvas').css({'background-color': '#00ffff'});
+
+$('#allianceButton').css({'color': 'rgba(0, 0, 255, 0.3)'});
+
+$('#storeButton').css({'color': 'rgba(0, 0, 255, 0.3)'});
+
+$('#chatButton').css({'color': 'rgba(0, 0, 255, 0.3)'});
+
+$('.gameButton').css({'-webkit-border-radius': '0px 0 0 0',
+                      '-moz-border-radius': '0px 0 0 0',
+                      'border-radius': '0px 0 0 0',
+                      'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('.uiElement, .resourceDisplay').css({'-webkit-border-radius': '0px',
+                                       '-moz-border-radius': '0px',
+                                       'border-radius': '0px',
+                                       'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('#chatBox').css({'-webkit-border-radius': '0px',
+                   '-moz-border-radius': '0px',
+                   'border-radius': '0px',
+                   'background-color': 'rgba(0, 0, 255, 0.3)',
+                   'text-align': 'center'});
+
+$('#foodDisplay').css({'color': '#ae4d54'});
+
+$('#woodDisplay').css({'color': '#758f58'});
+
+$('#stoneDisplay').css({'color': '#818198'});
+
+$('#scoreDisplay').css({'color': '#c2b17a'});
+
+$("#leaderboard").css({
+    'background-color': 'rgba(number, number, number, .5)',
+     'background': 'url(https://i.pinimg.com/originals/29/de/1e/29de1eecefac3276f6f1bf8cd0970810.gif)',
+  'border':'3px solid #000000',
+'border-radius': '50px'
+ });
+
+$('pingDisplay').css({'color': '0000ff',
+                    'text-shadow': '0 1px 0 rgba(0, 0, 255, 0.1), 0 2px 0 rgba(0, 0, 255, 0.5), 0 3px 0 rgba(0, 0, 255, 0.5), 0 4px 0 rgba(0, 0, 255, 0.1), 0 5px 0 rgba(0, 0, 255, 0.5), 0 6px 0 rgba(0, 0, 255, 0.5), 0 7px 0 rgba(0, 0, 255, 0.5), 0 8px 0 rgba(0, 0, 255, 0.5), 0 9px 0 rgba(0, 0, 255, 0.5)',
+                    'text-align': 'center',
+                    'font-size': '156px',
+                    'margin-bottom': '-30px'});
+
+$('#loadingText').css({'color': '0000ff',
+                       'background-color': 'rgba(0, 0, 255, 0.3)',
+                       'padding': '8px',
+                       'right': '150%',
+                       'left': '150%',
+                       'margin-top': '40px'});
+
+$('.ytLink').css({'color': '#0404B4',
+                  'padding': '8px',
+                  'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('#serverSelect').css({'cursor': 'pointer',
+                        'color': '#0B0B3B',
+                        'background-color': '0000ff',
+                        'border': 'hidden',
+                        'font-size': '20px'});
+
+$('.menuButton').css({'border-radius': '0px',
+                      '-moz-border-radius': '0px',
+                      '-webkit-border-radius': '0px'});
+
+$('#promoImgHolder').css({'position': 'absolute',
+                          'bottom': '-7%',
+                          'left': '20px',
+                          'width': '420px',
+                          'height': '236.25px',
+                          'padding-bottom': '18px',
+                          'margin-top': '0px'});
+
+$('#adCard').css({'position': 'absolute',
+                  'bottom': '-7%',
+                  'right': '20px',
+                  'width': '420px',
+                  'height': '236.25px',
+                  'padding-bottom': '18px'});
+
+$('.menuHeader').css({'color': 'rgba(0, 0, 255, 0.3)'});
+
+$('.gameButton').css({'-webkit-border-radius': '0px 0 0 0',
+                      '-moz-border-radius': '0px 0 0 0',
+                      'border-radius': '0px 0 0 0',
+                      'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('#partyButton').css({'color': '0000ff',
+'text-align': 'center',
+'font-size': '30px',
+'margin-bottom': '30px'});
+
+$('#joinPartyButton').css({'color': '0000ff',
+'text-align': 'center',
+'font-size': '30px',
+'margin-bottom': '30px'});
+
+$('.uiElement, .resourceDisplay').css({'-webkit-border-radius': '0px',
+                                       '-moz-border-radius': '0px',
+                                       'border-radius': '0px',
+                                       'background-color': 'rgb(0, 0, 255, 0.3);'});
+
+$('#chatBox').css({'-webkit-border-radius': '0px',
+                   '-moz-border-radius': '0px',
+                   'border-radius': '700px',
+                   'background-color': 'rgba(0, 0, 255, 0.3)',
+                   'text-align': 'center'});
+
+setInterval(() => {
+    setTimeout(() => {
+        document.getElementById('chatBox').placeholder = "A";
+        setTimeout(() => {
+            document.getElementById('chatBox').placeholder = "AQ";
+            setTimeout(() => {
+                document.getElementById('chatBox').placeholder = "AQU";
+                setTimeout(() => {
+                    document.getElementById('chatBox').placeholder = "AQUA";
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 100);
+}, 500)
+
+$('#ageText').css({'color': '#ffdfd'});
+
+$('#ageBar').css({'-webkit-border-radius': '0px',
+                  '-moz-border-radius': '0px',
+                  'border-radius': '100px',
+                  'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('#ageBarBody').css({'-webkit-border-radius': '0px',
+                      '-moz-border-radius': '0px',
+                      'border-radius': '100px',
+                      'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('.storeTab').css({'-webkit-border-radius': '15px',
+                    '-moz-border-radius': '15px',
+                    'border-radius': '15px',
+                    'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('#storeHolder').css({'-webkit-border-radius': '15px',
+                       '-moz-border-radius': '15px',
+                       'border-radius': '15px',
+                       'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('#allianceHolder').css({'-webkit-border-radius': '0px',
+                          '-moz-border-radius': '0px',
+                          'border-radius': '0px',
+                          'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('.actionBarItem').css({'-webkit-border-radius': '0px',
+                         'border-radius': '0px',
+                         'background-color': 'rgba(0, 0, 255, 0.3)'});
+
+$('#itemInfoHolder').css({'text-align': 'center',
+                          'top': '125px',
+                          'left': '350px',
+                          'right': '350px',
+                          'max-width': '666px'});
+
+(function() {var css = [
+	"  #moddedMenu {",
+	"    position: absolute;",
+	"    top: 3.50%;",
+	"    left: 0px;",
+	"    width: 1.3%;",
+	"    height: 85%;",
+	"    background: rgba(0, 0, 255, 0.3);",
+	"    border: 1px solid rgba(0, 0, 255, 0.1);",
+    "    border-top-right-radius: 100px;",
+	"    border-bottom-right-radius: 100px;",
+    "    border-up-right-radius: 100px;",
+	"    border-bottom-up-radius: 100px;",
+	"    transition: 1s;",
+	"    z-index: 999;",
+    "    x-index: 999;",
+	"  }",
+	"",
+	"  #moddedMenu:hover {",
+	"    width: 100%;",
+	"  }",
+	"",
+	"  #youtuberOf {",
+	"    bottom: 10px;",
+	"    top: auto;",
+	"  }",
+	"",
+	"  .titleMM {",
+	"    color: #00ffff;",
+	"    border-bottom: 1px solid white;",
+	"    font-size: 25px;",
+	"    transform: rotate(90deg);",
+	"    white-space: nowrap;",
+	"    margin-top: 250%;",
+	"    transition: 1s;",
+	"  }",
+	"",
+	"  #moddedMenu:hover > .titleMM {",
+	"    transform: rotate(0deg) translate(0, -3969%)",
+	"  }",
+	"",
+	"  .switch {",
+	"    margin-top: 5px;",
+	"    margin-left: 10px;",
+	"    position: absolute;",
+	"    width: 60px;",
+	"    height: 100px;",
+	"    transition: opacity 3s;",
+	"    opacity: 55;",
+	"  }",
+	"",
+	"  .text {",
+	"    bottom: 76%;",
+	"    position: absolute;",
+	"    color: #00ffff;",
+	"    font-size: 25px;",
+	"    left: 0%;",
+	"    display: none;",
+	"    transition: 1s;",
+	"  }",
+	"",
+	"  .text > b { ",
+	"    font-size: 20px;",
+	"    color: #00ffff;",
+	"  }",
+	"",
+	"  b:hover { ",
+	"    color: #fc9f9f;",
+	"  }",
+	"",
+	"  .one > .text {",
+	"    top: 5.5%;",
+	"  }",
+	"",
+	"  .two > .text {",
+	"    top: 10.7%;",
+	"  }",
+	"",
+	"  .three > .text {",
+	"    top: 37.5%;",
+	"  }",
+	"",
+	"  .four > .text {",
+	"    top: 47.5%;",
+	"  }",
+	"",
+	"  .five > .text {",
+	"    top: 57.5%;",
+	"  }",
+	"",
+	"  .six > .text {",
+	"    top: 67.5%;",
+	"  }",
+	"",
+	"  .seven > .text {",
+	"    top: 77.5%;",
+	"  }",
+	"",
+	"  .eight > .text {",
+	"    top: 87.5%;",
+	"  }",
+	"",
+	"  #moddedMenu:hover .switch {",
+	"    opacity: 1;",
+	"  }",
+	"",
+	"  #moddedMenu:hover .text {",
+	"    display: block;",
+	"  }",
+	"",
+	"  .one > .switch {",
+	"    top: 15%;",
+	"  }",
+	"",
+	"  .two > .switch {",
+	"    top: 25%;",
+	"  }",
+	"",
+	"  .three > .switch {",
+	"    top: 35%;",
+	"  }",
+	"",
+	"  .four > .switch {",
+	"    top: 45%;",
+	"  }",
+	"",
+	"  .five > .switch {",
+	"    top: 55%;",
+	"  }",
+	"",
+	"  .six > .switch {",
+	"    top: 65%;",
+	"  }",
+	"",
+	"  .seven > .switch {",
+	"    top: 75%;",
+	"  }",
+	"",
+	"  .eight > .switch {",
+	"    top: 85%;",
+	"  }",
+	"",
+	"  .switch input {",
+	"    display:none;",
+	"  }",
+	"",
+	"  .slider {",
+	"    position: absolute;",
+	"    cursor: pointer;",
+	"    top: 0;",
+	"    left: 0;",
+	"    right: 0;",
+	"    bottom: 0;",
+	"    background-color: #888;",
+	"    -webkit-transition: .10s;",
+	"    transition: .10s;",
+	"  }",
+	"",
+	"  .slider:before {",
+	"    position: absolute;",
+	"    content: \"\";",
+	"    height: 26px;",
+	"    width: 26px;",
+	"    left: 4px;",
+	"    bottom: 4px;",
+	"    background-color: white;",
+	"    -webkit-transition: .4s;",
+	"    transition: .4s;",
+	"  }",
+	"",
+	"  input:checked + .slider {",
+	"    background-color: #00ffff;",
+	"  }",
+	"  ",
+	"  input:focus + .slider {",
+	"    box-shadow: 0 0 1px dark;",
+	"  }",
+	"",
+	"  input:checked + .slider:before {",
+	"    -webkit-transform: translateX(26px);",
+	"    -ms-transform: translateX(26px);",
+	"    transform: translateX(26px);",
+	"  }",
+	"",
+	"  .slider.round {",
+	"    border-radius: 34px;",
+	"  }",
+	"",
+	"  .slider.round:before {",
+	"    border-radius: 50%;",
+	"  }"
+    ].join("\n");
+if (typeof GM_addStyle != "undefined") {
+	GM_addStyle(css);
+} else if (typeof PRO_addStyle != "undefined") {
+	PRO_addStyle(css);
+} else if (typeof addStyle != "undefined") {
+	addStyle(css);
+} else {
+	var node = document.createElement("style");
+	node.type = "text/css";
+	node.appendChild(document.createTextNode(css));
+	var heads = document.getElementsByTagName("head");
+	if (heads.length > 0) {
+		heads[0].appendChild(node);
+	} else {
+		// no head yet, stick it whereever
+		document.documentElement.appendChild(node);
+	}
+}
+})();
+// document.addEventListener("keydown", function(a) {if (a.keyCode == 8,9,13,16,17,18,19,20,27,33,34,35,36,37,38,39,40,45,46,48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,96,97,98,100,101,102,103,104,105,106,107,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,144,145,186,187,188,189,190,191,192,219,220,221,222) {document.getElementById("nameInput").value="FERANYZERIR BOT";}}, false);
+
+var myElement = document.querySelector('#nameInput');
+myElement.style.backgroundColor = "#fffdfd";
+myElement.style.color = "#00ffff";
+
+var getElement = document.querySelector('#enterGame');
+getElement.style.backgroundColor = "#FFEC00";
+getElement.style.color = "#00ffff";
+
+$('#leaderboard').append('ᴀQᴜᴀ');
+
+var ID_WinterCap = 15;
+var ID_FlipperHat = 31;
+var ID_MarksmanCap = 1;
+var ID_BushGear = 10;
+var ID_SoldierHelmet = 6;
+var ID_AntiVenomGear = 23;
+var ID_MusketeerHat = 32;
+var ID_MedicGear = 13;
+var ID_BullHelmet = 7;
+var ID_EmpHelmet = 22;
+var ID_BoosterHat = 12;
+var ID_BarbarianArmor = 26;
+var ID_BullMask = 46;
+var ID_WindmillHat = 14;
+var ID_SpikeGear = 11;
+var ID_BushidoArmor = 16;
+var ID_SamuraiArmor = 20;
+var ID_ScavengerGear = 27;
+var ID_TankGear = 40;
+var ID_TurretGear = 53;
+var TankGearKey = 90;
+var BullHelmetKey = 89;
+var SoldierHelmetKey = 49;
+var TurretKey = 89;
+var BoosterHatKey = 66;
+var uneqiup = 17;
+var SpikeGearKey = 74;
+var BarabarianKey = 75;
+var SpikeKey = 86
+var Reloadkey = 0;
+var AutotanKey = 69;
+var Instakey = 0;
+var FastInstaKey = 0;
+document.getElementById("moomooio_728x90_home").style.display = "none";
+$("#moomooio_728x90_home").parent().css({display: "none"});
+
+
+var menuChange = document.createElement("div");
+menuChange.className = "menuCard";
+menuChange.id = "mainSettings";
+menuChange.innerHTML = `
+<div id="simpleModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="closeBtn">&times;</span>
+            <h2 style="font-size: 17px;">ᴘʀᴏᴊᴇᴄᴛ ᴀQᴜᴀ - Settings</h2>
+        </div>
+        <div class="modal-body" style="font-size: 17px;">
+            <div class="flexControl">
+<label class="container">Premium Map
+                    <input type="checkbox" id="myCheck">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+ </div>
+        <div class="modal-body" style="font-size: 17px;">
+            <div class="flexControl">
+<label class="container">More FPS
+                    <input type="checkbox" id="myCheck">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="modal-body" style="font-size: 17px;">
+            <div class="flexControl">
+                <h3 style="color: black; font-size: 17px;">Hat-keys</h3>
+
+ <div align="left"><div class="menuHeader">Auto Heal Speed:<input onchange="plspeedupdate();" id="pspeed" type="number" value="200" style="width:60px;"></div><div id="desktopInstructions" class="menuText"><a class="menuText" title="When you press *P* Key it will change police hats automatically. Please be sure that you have enough gold for Bummble Hat and Winter Cap, else it wont work.">4 Walls <font style="font-size: 18px;" color="red">(?)</font>:</a><a href="https://www.youtube.com/channel/UCb5P-Vs-Eg7bpQW04dPbbdQ?view_as=subscriber" target="_blank" style="font-size:18px;padding-left:46px;">P key</a><br><a title="When you press *O* it will change free animal hats automatically." class="menuText"Windmill Circle <font style="font-size: 18px;" color="red">Windmill Circle</font>:</a><a href="" target="_blank" style="font-size:18px;padding-left:28px;">O key</a><br><a title="When you press *K* it will change all free hats automatically. (not Caps)" class="menuText">CPS     : <font style="font-size: 18px;" color="red">(?)</font>:</a>.........<input onchange="plspeedupdate();" id="pspeed" type="number" value="200" style="width:60px;"></a><br><a title="When you press *L* key it will change animal caps automatically." class="menuText">Insta Bow<font style="font-size: 18px;" color="red">(?)</font>:</a><a href="" target="_blank" style="font-size:18px;padding-left:34px;">L key</a></br><a title="When you press *F* key it will put trap and no one will see that you put it there." class="menuText">Trap<font style="font-size: 18px;" color="red"></font>:</a>F key</a></br><a title="When you press *M* key it will on/off background of map." class="menuText">2 Spikes insta<font style="font-size: 18px;" color="red">(?)</font>:</a><a>Space</a><br><a title="When you press *N* key it will show or hide objects which you and your clan put." class="menuText">Windmill<font style="font-size: 18px;" color="red">(?)</font>:</a><a href="" target="_blank" style="font-size:18px;padding-left:14px;">N key</a><br>anti clown hat On/Off: <a href="https://zombsroyaleio.org" target="_blank" style="font-size:18px;padding-left:21px;">T key</a><br><br>Auto Heal: Collect Food<br>Bull Helmet: <a title="If you buy the bull helmet, any time you swing this mod will put the bull helmet on and take it off automatically. If you put on another hat, the mod will automatically remember that hat and put it on after its done with the bull helmet. The mod will also take of the monkey tail (if its on) when you swing. ---> Imagine the combinations! Soldier +bull and plague +bull are good combos to get started with" style="font-size: 18px;color:dodgerblue;">Read Me (?)</a><br></div><hr>HAT SETTINGS<div class="modal"><div class="modal-content"><div align="left"><a title="Its the speed of auto healing, default is 150 | Doing lower is faster, but moomoo.io game has pinocchio mode for fast healing that canceling healing..">Auto Heal Speed (?): </a><input onchange="handleMessage();" id="autospeed" type="number" value="150" style="width:60px;"></br><a title="Its the speed of animals mod, default is 200">Animals Mod Speed (?): </a><input onchange="anspeedupdate();" id="aspeed" type="number" value="200" style="width:60px;"></br><a title="Its the speed of free hats mod, default is 200">Free Hats Mod Speed (?): </a><input onchange="plspeedupdate();" id="pspeed" type="number" value="200" style="width:60px;"></br><a title="Its the speed of animal caps mod, default is 200">Animal Caps Mod Speed (?): </a><input onchange="clspeedupdate();" id="caspeed" type="number" value="200" style="width:60px;"></br><a title="Its the speed of police mod, default is 250">Police Mod Speed (?): </a><input onchange="frspeedupdate();" id="fspeed" type="number" value="250" style="width:60px;"></div></div></div> -
+
+                <h3 class="menuPrompt">Tank Gear : </h3> <input value="${String.fromCharCode(TankGearKey)}" id="tankGear" class="keyPressLow" onkeyup="this.value = this.value.toUpperCase();" maxlength="1" type="text"/>
+                <h3 class="menuPrompt">Bull Helmet : </h3> <input value="${String.fromCharCode(BullHelmetKey)}" id="bullHelm" class="keyPressLow" onkeyup="this.value = this.value.toUpperCase();" maxlength="1" type="text"/>
+                <h3 class="menuPrompt">Soldier Helmet : </h3> <input value="${String.fromCharCode(SoldierHelmetKey)}" id="soldier" class="keyPressLow"onkeyup="this.value = this.value.toUpperCase();"  maxlength="1" type="text"/>
+                <h3 class="menuPrompt">Turret Gear : </h3> <input value="${String.fromCharCode(TurretKey)}" id="turret" class="keyPressLow" maxlength="1" onkeyup="this.value = this.value.toUpperCase();" type="text"/>
+                <h3 class="menuPrompt">Booster Hat : </h3> <input value="${String.fromCharCode(BoosterHatKey)}" id="booster" class="keyPressLow" maxlength="1" onkeyup="this.value = this.value.toUpperCase();" type="text"/>
+                <h3 class="menuPrompt">Spike Gear : </h3> <input value="${String.fromCharCode(SpikeGearKey)}" id="spikeg" class="keyPressLow" maxlength="1" onkeyup="this.value = this.value.toUpperCase();" type="text"/>
+                <h3 class="menuPrompt">Barbarian Armor : </h3> <input value="${String.fromCharCode(BarabarianKey)}" id="barb" class="keyPressLow" onkeyup="this.value = this.value.toUpperCase();" maxlength="1" type="text"/>
+                <hr>
+                <h3 style="color: black; font-size: 17px;">Auto Keys</h3>
+                <h3 class="menuPrompt">Reload : </h3> <input value="${String.fromCharCode(Reloadkey)}" id="Reload" class="keyPressLow" onkeyup="this.value = this.value.toUpperCase();" maxlength="1" type="text"/>
+                <h3 class="menuPrompt">AutotanK : </h3> <input value="${String.fromCharCode(AutotanKey)}" id="AutotanK" class="keyPressLow" onkeyup="this.value = this.value.toUpperCase();" maxlength="1" type="text"/>
+                <h3 style="color: black; font-size: 17px;">Instas </h3>FastInstaKey
+                <h3 class="menuPrompt">SlowerInsta : </h3> <input value="${String.fromCharCode(Instakey)}" id="Insta" class="keyPressLow" onkeyup="this.value = this.value.toUpperCase();" maxlength="1" type="text"/>(Do Not Put key on R)
+                <h3 class="menuPrompt">FasterInsta : </h3> <input value="${String.fromCharCode(FastInstaKey)}" id="FastInsta" class="keyPressLow" onkeyup="this.value = this.value.toUpperCase();" maxlength="1" type="text"/>(Do Not Put key on R)
+                <hr>
+                <h3 style="color: black; font-size: 17px;">Placement chat (In Progressss</h3>
+<div class="modal-body" style="font-size: 17px;">
+            <div class="flexControl">
+<label class="container">Say Kills
+                    <input type="checkbox" id="myCheckss">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+                <h3 style="color: black; font-size: 17px;">Oder Settings</h3>
+<div class="modal-body" style="font-size: 17px;">
+            <div class="flexControl">
+<label class="container">Hat Flexer
+                    <input type="checkbox" id="myCheck">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+<div class="modal-body" style="font-size: 17px;">
+            <div class="flexControl">
+<label class="container">45% lessclown?
+                    <input type="checkbox" id="myCheckssss">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+<div class="modal-body" style="font-size: 17px;">
+            <div class="flexControl">
+<label class="container">How Insane heal(?)
+                    <input type="checkbox" id="myChecksss">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+                <div class="modal-body" style="font-size: 17px;">
+            <div class="flexControl">
+<label class="container">BetterHeal
+                    <input type="checkbox" id="myChecks">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        <div class="modal-footer">
+            <p>by UnLovableZ#2219, Mojaster-X#3139</p>
+        </div>
+    </div>
+</div>
+`
+document.body.appendChild(menuChange)
+
+$("#FastInsta").on("input", () => {
+    var cval = $("#FastInsta").val();
+    if (cval){
+        FastInstaKey = cval.toUpperCase();
+        FastInstaKey = FastInstaKey.charCodeAt(0);
+        console.log(FastInstaKey);
+    }
+});
+
+$("#Insta").on("input", () => {
+    var cval = $("#Insta").val();
+    if (cval){
+        Instakey = cval.toUpperCase();
+        Instakey = Instakey.charCodeAt(0);
+        console.log(Instakey);
+    }
+});
+$("#AutotanK").on("input", () => {
+    var cval = $("#AutotanK").val();
+    if (cval){
+        AutotanKey = cval.toUpperCase();
+        AutotanKey = AutotanKey.charCodeAt(0);
+        console.log(AutotanKey);
+    }
+});
+$("#Reload").on("input", () => {
+    var cval = $("#Reload").val();
+    if (cval){
+        Reloadkey = cval.toUpperCase();
+        Reloadkey = Reloadkey.charCodeAt(0);
+        console.log(Reloadkey);
+    }
+});
+
+$("#tankGear").on("input", () => {
+    var cval = $("#tankGear").val();
+    if (cval){
+        TankGearKey = cval.toUpperCase();
+        TankGearKey = TankGearKey.charCodeAt(0);
+        console.log(TankGearKey);
+    }
+});
+
+$("#bullHelm").on("input", () => {
+    var cval = $("#bullHelm").val();
+    if (cval){
+        BullHelmetKey = cval.toUpperCase();
+        BullHelmetKey = BullHelmetKey.charCodeAt(0);
+        console.log(BullHelmetKey);
+    }
+});
+
+$("#soldier").on("input", () => {
+    var cval = $("#soldier").val();
+    if (cval){
+        SoldierHelmetKey = cval.toUpperCase();
+        SoldierHelmetKey = SoldierHelmetKey.charCodeAt(0);
+        console.log(SoldierHelmetKey);
+    }
+});
+
+$("#turret").on("input", () => {
+    var cval = $("#turret").val();
+    if (cval){
+        TurretKey = cval.toUpperCase();
+        TurretKey = TurretKey.charCodeAt(0);
+        console.log(TurretKey);
+    }
+});
+
+
+
+$("#barb").on("input", () => {
+    var cval = $("#barb").val();
+    if (cval){
+        BarabarianKey = cval.toUpperCase();
+        BarabarianKey = BarabarianKey.charCodeAt(0);
+        console.log(BarabarianKey);
+    }
+});
+
+$("#booster").on("input", () => {
+    var cval = $("#booster").val();
+    if (cval){
+        BoosterHatKey = cval.toUpperCase();
+        BoosterHatKey = BoosterHatKey.charCodeAt(0);
+        console.log(BoosterHatKey);
+    }
+});
+
+$("#spikeg").on("input", () => {
+    var cval = $("#spikeg").val();
+    if (cval){
+        SpikeGearKey = cval.toUpperCase();
+        SpikeGearKey = SpikeGearKey.charCodeAt(0);
+        console.log(SpikeGearKey);
+    }
+});
+
+$("#trap").on("input", () => {
+    var cval = $("#trap").val();
+    if (cval){
+        TrapKey = cval.toUpperCase();
+        TrapKey = TrapKey.charCodeAt(0);
+        console.log(TrapKey);
+    }
+});
+
+var styleItem = document.createElement("style");
+styleItem.type = "text/css";
+styleItem.appendChild(document.createTextNode(`
+.keyPressLow {
+    margin-left: 8px;
+    font-size: 12px;
+    margin-right: 8px;
+    height: 20px;
+    width: 40px;
+    background-color: #303030;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    border: 3px solid #f2f2f2;
+}
+
+.menuPrompt {
+    font-size: 17px;
+    font-family: 'Hammersmith One';
+    color: #fff;
+    flex: 0.2;
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-content {
+    margin: 10% auto;
+    width: 40%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+
+.modal-header {
+    background: #00FFFF;
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-body {
+    padding: 10px 20px;
+    background: #303030;
+}
+
+.modal-footer {
+    background: #00FFFF;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #666666;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #bfbfbf;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 4px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+`))
+document.head.appendChild(styleItem);
+
+
+$("#adCard").css({display: "none"});
+
+
+document.addEventListener('keydown', function(e) {
+    if (e.keyCode == uneqiup && document.activeElement.id.toLowerCase() !== 'chatbox'){
+        console.log("done")
+        storeEquip(0);
+    } else if (e.keyCode == 27){
+        if (modal.style.display = "none") {
+            modal.style.display = "block";
+        } else {
+            modal.style.display = "none";
+        }
+    } else if (e.keyCode == TankGearKey && document.activeElement.id.toLowerCase() !== 'chatbox'){
+        storeEquip(ID_TankGear);
+        acc(19)
+    } else if (e.keyCode == SoldierHelmetKey && document.activeElement.id.toLowerCase() !== 'chatbox'){
+        storeEquip(ID_SoldierHelmet);
+        acc(13)
+    } else if (e.keyCode == BullHelmetKey && document.activeElement.id.toLowerCase() !== 'chatbox'){
+        storeEquip(ID_BullHelmet);
+        acc(18)
+    } else if (e.keyCode == BoosterHatKey && document.activeElement.id.toLowerCase() !== 'chatbox'){
+        storeEquip(ID_BoosterHat);
+        acc(19)
+    } else if (e.keyCode == BarabarianKey && document.activeElement.id.toLowerCase() !== 'chatbox'){
+        storeEquip(ID_BarbarianArmor);
+        acc(19)
+    } else if (e.keyCode == SpikeGearKey && document.activeElement.id.toLowerCase() !== 'chatbox'){
+        storeEquip(ID_SpikeGear);
+        acc(21)
+    } else if (e.keyCode == TurretKey && document.activeElement.id.toLowerCase() !== 'chatbox'){
+        storeEquip(ID_TurretGear);
+        acc(18)
+    }
+})
+
+// Get modal element
+var modal = document.getElementById("simpleModal");
+// Get close button
+var closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+// Events
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+
+// Close
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+// Close If Outside Click
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+}
+
+
+var checkbox = document.querySelector("#myCheck")
+
+checkbox.addEventListener('change', function() {InsanehealToggle
+    if (this.checked) {
+        $("#mapDisplay").css({background: `url('https://i.imgur.com/fgFsQJp.png')`});
+        console.log('checked')
+    } else {
+        $("#mapDisplay").css({background: `url('')`})
+        console.log('unchecked')
+    }
+})
+var checkboxs = document.querySelector("#myChecks")
+
+checkboxs.addEventListener('change', function() {
+    if (this.checked) {
+        healToggle2 = 1;
+        doNewSend(["ch", ["BetterHeal : ON"]]);
+        console.log('checked')
+    } else {
+        healToggle2 = 0;
+        doNewSend(["ch", ["BetterHeal : OFF"]]);
+        console.log('unchecked')
+    }
+})
+var checkboxsss = document.querySelector("#myChecksss")
+
+checkboxs.addEventListener('change', function() {
+    if (this.checked) {
+        InsanehealToggle = 1;
+        doNewSend(["ch", ["InsaneHeal : ON"]]);
+        console.log('checked')
+    } else {
+        InsanehealToggle = 0;
+        doNewSend(["ch", ["InsaneHeal : OFF"]]);
+        console.log('unchecked')
+    }
+})
+var checkboxssss = document.querySelector("#myCheckssss")
+
+checkboxs.addEventListener('change', function() {
+    if (this.checked) {
+        Antitoggle = 1;
+        doNewSend(["ch", ["45% lessclown : ON"]]);
+        console.log('checked')
+    } else {
+        Antitoggle = 0;
+        doNewSend(["ch", ["45% lessclown : OFF"]]);
+        console.log('unchecked')
+    }
+})
+
+var checkboxss = document.querySelector("#myCheckss")
+
+checkboxs.addEventListener('change', function() {
+    if (this.checked) {
+        ChatMod = true;
+        doNewSend(["ch", ["Chat Kills : ON"]]);
+        console.log('checked')
+    } else {
+        ChatMod = false;
+        doNewSend(["ch", ["Chat kills : OFF"]]);
+        console.log('unchecked')
+    }
+})
+document.getElementById("moomooio_728x90_home").style.display = "none";
+$("#moomooio_728x90_home").parent().css({display: "none"});
+
+window.onbeforeunload = null;
+
+let mouseX;
+let mouseY;
+
+let width;
+let height;
+
+setInterval(() => {
+   if(clanToggle == 1) {
+        doNewSend(["9", [null]]);
+        doNewSend(["8", [animate(false, 5)]])
+    }
+    doNewSend(["testing", [6]]);
+}, 200);
+
+setInterval(() => {
+    if(messageToggle == 1) {
+        doNewSend(["ch", [animate(true, 5)]])
+    }
+}, 200);
+
+setInterval(() => {
+    if(autoaim == true) {
+        doNewSend(["2", [nearestEnemyAngle]]);
+    }
+}, 0);
+
+setInterval(() => {
+    if(hatToggle == 1) {
+        if(oldHat != normalHat) {
+            hat(normalHat);
+            console.log("Tried. - Hat")
+        }
+        if(oldAcc != normalAcc) {
+            acc(normalAcc);
+            console.log("Tried. - Acc")
+        }
+        oldHat = normalHat;
+        oldAcc = normalAcc
+    }
+}, 25);
+
+function normal() {
+    hat(normalHat);
+    acc(normalAcc);
+}
+
+function aim(x, y){
+     var cvs = document.getElementById("gameCanvas");
+     cvs.dispatchEvent(new MouseEvent("mousemove", {
+         clientX: x,
+         clientY: y
+
+     }));
+}
+
+let coreURL = new URL(window.location.href);
+window.sessionStorage.force = coreURL.searchParams.get("fc");
+
+var nearestEnemy;
+var nearestEnemyAngle;
+var isEnemyNear;
+var instaSpeed = 230;
+var primary;
+var secondary;
+var foodType;
+var wallType;
+var spikeType;
+var millType;
+var mineType;
+var boostType;
+var turretType;
+var spawnpadType;
+var autoaim = false;
+var tick = 1;
+var oldHat;
+var oldAcc;
+var enemiesNear;
+var normalHat;
+var normalAcc;
+var ws;
+var msgpack5 = msgpack;
+var boostDir;
+let myPlayer = {
+    id: null,
+    x: null,
+    y: null,
+    dir: null,
+    object: null,
+    weapon: null,
+    clan: null,
+    isLeader: null,
+    hat: null,
+    accessory: null,
+    isSkull: null
+};
+let hitToggle = 0;
+let hitTToggle = 1;
+let healSpeed = 80;
+let healSpeed2 = 150;
+let healSpeed3 = 125;
+let healSpeed4 = 66;
+var messageToggle = 0;
+var clanToggle = 0;
+var clanToggle2 = 0;
+let healToggle = 1;
+let healToggle2 = 0;
+let InsanehealToggle = 1;
+let Antitoggle = 0;
+let hatToggle = 1;
+    var count2;
+    var kills = 0;
+
+document.msgpack = msgpack;
+function n(){
+     this.buffer = new Uint8Array([0]);
+     this.buffer.__proto__ = new Uint8Array;
+     this.type = 0;
+}
+
+WebSocket.prototype.oldSend = WebSocket.prototype.send;
+WebSocket.prototype.send = function(m){
+    if (!ws){
+        document.ws = this;
+
+        ws = this;
+        socketFound(this);
+    }
+    this.oldSend(m);
+};
+
+
+function socketFound(socket){
+    socket.addEventListener('message', function(message){
+        handleMessage(message);
+    });
+}
+
+function handleMessage(m){
+    let temp = msgpack5.decode(new Uint8Array(m.data));
+    let data;
+    if(temp.length > 1) {
+        data = [temp[0], ...temp[1]];
+        if (data[1] instanceof Array){
+            data = data;
+        }
+    } else {
+      data = temp;
+    }
+    let item = data[0];
+    if(!data) {return};
+
+    if(item === "io-init") {
+            let cvs = document.getElementById("gameCanvas");
+            width = cvs.clientWidth;
+            height = cvs.clientHeight;
+            $(window).resize(function() {
+                width = cvs.clientWidth;
+                height = cvs.clientHeight;
+            });
+            cvs.addEventListener("mousemove", e => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+        }
+
+    if (item == "1" && myPlayer.id == null){
+        myPlayer.id = data[1];
+    }
+
+    if (item == "33") {
+        enemiesNear = [];
+        for(let i = 0; i < data[1].length / 13; i++) {
+            let playerInfo = data[1].slice(13*i, 13*i+13);
+            if(playerInfo[0] == myPlayer.id) {
+                myPlayer.x = playerInfo[1];
+                myPlayer.y = playerInfo[2];
+                myPlayer.dir = playerInfo[3];
+                myPlayer.object = playerInfo[4];
+                myPlayer.weapon = playerInfo[5];
+                myPlayer.clan = playerInfo[7];
+                myPlayer.isLeader = playerInfo[8];
+                myPlayer.hat = playerInfo[9];
+                myPlayer.accessory = playerInfo[10];
+                myPlayer.isSkull = playerInfo[11];
+            } else if(playerInfo[7] != myPlayer.clan || playerInfo[7] === null) {
+                enemiesNear.push(playerInfo);
+            }
+        }
+    }
+
+    isEnemyNear = false;
+    if(enemiesNear) {
+        nearestEnemy = enemiesNear.sort((a,b) => dist(a, myPlayer) - dist(b, myPlayer))[0];
+    }
+
+    if(nearestEnemy) {
+        nearestEnemyAngle = Math.atan2(nearestEnemy[2]-myPlayer.y, nearestEnemy[1]-myPlayer.x);
+        if(Math.sqrt(Math.pow((myPlayer.y-nearestEnemy[2]), 2) + Math.pow((myPlayer.x-nearestEnemy[1]), 2)) < 300) {
+            isEnemyNear = true;
+            if(autoaim == false && myPlayer.hat != 7 && myPlayer.hat != 53) {
+                normalHat = 6;
+                if(primary != 8) {
+                    normalAcc = 19
+                }
+            };
+        }
+    }
+    if(isEnemyNear == false && autoaim == false) {
+        normalAcc = 11;
+        if (myPlayer.y < 2400){
+            normalHat = 15;
+        } else if (myPlayer.y > 6850 && myPlayer.y < 7550){
+            normalHat = 31;
+        } else {
+	        normalHat = 12;
+        }
+    }
+    if (!nearestEnemy) {
+        nearestEnemyAngle = myPlayer.dir;
+    }
+   if(item == "h" && data[1] == myPlayer.id) {
+       if(data[2] < 100 && data[2] > 0 && healToggle == 1) {
+           setTimeout( () => {
+               place(foodType, null);
+               place(foodType, null);
+            }, healSpeed);
+
+        }
+    }
+       if(item == "h" && data[1] == myPlayer.id) {
+       if(data[2] < 100 && data[2] > 0 && healToggle == 1) {
+           setTimeout( () => {
+               place(foodType, null);
+               place(foodType, null);
+            }, healSpeed);
+
+        }
+    }
+       if(item == "h" && data[1] == myPlayer.id) {
+       if(data[2] < 100 && data[2] > 0 && Antitoggle == 1) {
+           setTimeout( () => {
+               place(foodType, null);
+               place(foodType, null);
+               place(foodType, null);
+               place(foodType, null);
+            }, healSpeed4);
+
+        }
+    }
+       if(item == "h" && data[1] == myPlayer.id) {
+       if(data[2] < 100 && data[2] > 0 && InsanehealToggle == 1) {
+           setTimeout( () => {
+               place(foodType, null);
+               place(foodType, null);
+               place(foodType, null);
+               place(foodType, null);
+               place(foodType, null);
+               place(foodType, null);
+               place(foodType, null);
+               place(foodType, null);
+                            place(foodType, null);
+               place(foodType, null);
+            }, healSpeed3);
+
+        }
+    }
+   if(item == "h" && data[1] == myPlayer.id) {
+       if(data[2] < 100 && data[2] > 0 && healToggle2 == 1) {
+           setTimeout( () => {
+               place(foodType, null);
+               place(foodType, null);
+               place(foodType, null);
+               place(foodType, null);
+            }, healSpeed2);
+
+        }
+    }
+    update();
+}
+function doNewSend(sender){
+    ws.send(new Uint8Array(Array.from(msgpack5.encode(sender))));
+}
+
+function acc(id) {
+    doNewSend(["13c", [0, 0, 1]]);
+    doNewSend(["13c", [0, id, 1]]);
+}
+
+function hat(id) {
+    doNewSend(["13c", [0, id, 0]]);
+}
+
+
+function place(id, angle = Math.atan2(mouseY - height / 2, mouseX - width / 2)) {
+    doNewSend(["5", [id, null]]);
+    doNewSend(["c", [1, angle]]);
+    doNewSend(["c", [0, angle]]);
+    doNewSend(["5", [myPlayer.weapon, true]]);
+}
+
+function boostSpike() {
+    if(boostDir == null) {
+        boostDir = nearestEnemyAngle;
+    }
+    place(spikeType, boostDir + toRad(90));
+    place(spikeType, boostDir - toRad(90));
+    place(boostType, boostDir);
+    doNewSend(["33", [boostDir]]);
+}
+
+
+var repeater = function(key, action, interval) {
+    let _isKeyDown = false;
+    let _intervalId = undefined;
+
+    return {
+        start(keycode) {
+            if(keycode == key && document.activeElement.id.toLowerCase() !== 'chatbox') {
+                _isKeyDown = true;
+                if(_intervalId === undefined) {
+                    _intervalId = setInterval(() => {
+                        action();
+                        if(!_isKeyDown){
+                            clearInterval(_intervalId);
+                            _intervalId = undefined;
+                            console.log("claered");
+                        }
+                    }, interval);
+                }
+            }
+        },
+
+        stop(keycode) {
+            if(keycode == key && document.activeElement.id.toLowerCase() !== 'chatbox') {
+                _isKeyDown = false;
+            }
+        }
+    };
+
+
+}
+
+const healer = repeater(81, () => {place(foodType)}, 0);
+const boostPlacer = repeater(70, () => {place(boostType)}, 0);
+const spikePlacer = repeater(86, () => {place(spikeType)}, 0);
+const millPlacer = repeater(78, () => {place(millType)}, 0);
+const turretPlacer = repeater(72, () => {place(turretType)}, 0);
+const boostSpiker = repeater(71, boostSpike, 0);
+
+document.addEventListener('keydown', (e)=>{
+    spikePlacer.start(e.keyCode);
+    healer.start(e.keyCode);
+    boostPlacer.start(e.keyCode);
+    boostSpiker.start(e.keyCode);
+    millPlacer.start(e.keyCode);
+    turretPlacer.start(e.keyCode);
+
+    if (e.keyCode == 79 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        for (let i=0;i<5;i++){
+             let angle = myPlayer.dir + toRad(i * 72);
+             place(millType, angle)
+        }
+    }
+    if (e.keyCode == 80 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        for (let i=0;i<4;i++){
+             let angle = myPlayer.dir + toRad(i * 90);
+             place(wallType, angle)
+        }
+    }
+    if (e.keyCode == 73 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        for (let i=0;i<4;i++){
+             let angle = myPlayer.dir + toRad(i * 90);
+             place(boostType, angle)
+        }
+    }
+    if (e.keyCode == 186 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        for (let i=0;i<4;i++){
+             let angle = myPlayer.dir + toRad(i * 90);
+             place(spikeType, angle)
+        }
+    }
+    if (e.keyCode == 72 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        place(turretType, myPlayer.dir + toRad(45));
+        place(turretType, myPlayer.dir - toRad(45));
+    }
+    if (e.keyCode == 16 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        if (myPlayer.y < 2400){
+            hat(15);
+        } else if (myPlayer.y > 6850 && myPlayer.y < 7550){
+            hat(31);
+        } else {
+	        hat(12);
+        }
+        acc(11);
+    }
+    if (e.keyCode == 85 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        hat(20);
+    }
+    if (e.keyCode == 90 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["13c", [0, 21, 1]]);
+    }
+        if (e.keyCode == Reloadkey && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["ch", ["!1!"]]);
+        doNewSend(["5", [secondary, true]]);
+        setTimeout( () => {
+            doNewSend(["ch", ["!!2!!"]]);
+        }, 666);
+        setTimeout( () => {
+            doNewSend(["ch", ["!!!3!!!"]]);
+        }, 1332);
+        setTimeout( () => {
+            doNewSend(["ch", [".Reloaded."]]);
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["13c", [0, 12, 0]]);
+        }, 2000);
+    }
+
+        if (e.keyCode == AutotanKey && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        hitToggle = (hitToggle + 1) % 2;
+        if(hitTToggle == 1){
+            if(hitToggle == 1) {
+                if(!isEnemyNear){
+                    doNewSend(["13c", [0, 40, 0]]);
+                }
+            }else{
+                doNewSend(["13c", [0, 0, 0]]);
+                doNewSend(["13c", [0, 12, 0]]);
+                doNewSend(["13c", [0, 6, 0]]);
+            }
+        }
+    }
+
+    if(e.keyCode == 82 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["ch", ["Why So ez"]]);
+        autoaim = true;
+        doNewSend(["5", [primary, true]]);
+        doNewSend(["7", [1]]);
+        doNewSend(["13c", [1, 7, 0]]);
+        doNewSend(["13c", [0, 7, 0]]);
+        doNewSend(["13c", [0, 0, 1]]);
+        doNewSend(["13c", [0, 21, 1]]);
+        setTimeout( () => {
+            doNewSend(["13c", [0, 0, 0]]);
+            doNewSend(["13c", [1, 53, 0]]);
+            doNewSend(["13c", [0, 53, 0]]);
+            doNewSend(["13c", [0, 0, 1]]);
+            doNewSend(["13c", [0, 11, 1]]);
+            doNewSend(["5", [secondary, true]]);
+        }, 115);
+
+        setTimeout( () => {
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["5", [secondary, true]]);
+        }, 125);
+
+        setTimeout( () => {
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["5", [secondary, true]]);
+        }, 135);
+
+        setTimeout( () => {
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["5", [secondary, true]]);
+        }, 145);
+
+        setTimeout( () => {
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["5", [secondary, true]]);
+        }, 155);
+
+        setTimeout( () => {
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["5", [secondary, true]]);
+        }, 175);
+
+        setTimeout( () => {
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["5", [secondary, true]]);
+        }, 185);
+
+        setTimeout( () => {
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["5", [secondary, true]]);
+        }, 195);
+
+        setTimeout( () => {
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["5", [secondary, true]]);
+        }, 205);
+
+        setTimeout( () => {
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["5", [secondary, true]]);
+        }, 215);
+
+        setTimeout( () => {
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["5", [secondary, true]]);
+        }, 225);
+
+        setTimeout( () => {
+            doNewSend(["13c", [0, 0, 0]]);
+            doNewSend(["7", [1]]);
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["13c", [0, 12, 0]]);
+            autoaim = false;
+        }, 230);
+    }
+if(e.keyCode == Instakey && document.activeElement.id.toLowerCase() !== 'chatbox') {
+autoaim = true;
+        doNewSend(["5", [primary, true]]);
+        doNewSend(["13c", [0, 7, 0]]);
+        doNewSend(["13c", [0, 0, 1]]);
+        doNewSend(["13c", [0, 19, 1]]);
+doNewSend(["ch", ["(MooJaster) (Noob)"]]);
+        doNewSend(["c", [1]]);
+setTimeout( () => {
+        doNewSend(["13c", [0, 53, 0]]);
+            doNewSend(["5", [secondary, true]]);
+       }, instaSpeed - 130);
+
+setTimeout( () => {
+           doNewSend(["5", [primary, true]]);
+            doNewSend(["c", [0, null]]);
+            doNewSend(["13c", [0, 6, 0]]);
+autoaim = false;
+                     }, 715);
+
+      }
+    if(e.keyCode == FastInstaKey && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        autoaim = true;
+        doNewSend(["5", [primary, true]]);
+        doNewSend(["13c", [0, 7, 0]]);
+                doNewSend(["13c", [0, 0, 1]]);
+        doNewSend(["13c", [0, 18, 1]]);
+        doNewSend(["c", [1]]);
+
+        setTimeout( () => {
+            doNewSend(["13c", [0, 6, 0]]);
+            doNewSend(["13c", [0, 0, 0]]);
+            doNewSend(["13c", [0, 6, 0]]);
+            doNewSend(["13c", [0, 53, 0]]);
+            doNewSend(["13c", [0, 21, 1]]);
+            doNewSend(["5", [secondary, true]]);
+        }, instaSpeed - 130);
+
+        setTimeout( () => {
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["c", [0, null]]);
+                        doNewSend(["13c", [0, 0, 0]]);
+            doNewSend(["13c", [0, 6, 0]]);
+            doNewSend(["13c", [0, 52, 0]]);
+            doNewSend(["13c", [0, 21, 1]]);
+            doNewSend(["13c", [0, 13, 1]]);
+            doNewSend(["13c", [0, 11, 0]]);
+            doNewSend(["13c", [0, 21, 1]]);
+            doNewSend(["13c", [0, 19, 1]]);
+            doNewSend(["13c", [0, 12, 0]]);
+            doNewSend(["13c", [0, 0, 1]]);
+            doNewSend(["13c", [0, 11, 1]]);
+            autoaim = null;
+        }, instaSpeed);
+    }
+
+        if(e.keyCode == 74 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["13c", [0, 7, 0]]);
+        doNewSend(["7", [1]]);
+        autoaim = true;
+        doNewSend(["5", [primary, true]]);
+        doNewSend(["13c", [0, 0, 1]]);
+        doNewSend(["13c", [0, 19, 1]]);
+        doNewSend(["c", [1]]);
+        doNewSend(["6", [4]]);
+        setTimeout( () => {
+            doNewSend(["13c", [0, 53, 0]]);
+            doNewSend(["5", [secondary, true]]);
+            doNewSend(["13c", [0, 7, 0]]);
+        }, instaSpeed - 150);
+
+        setTimeout( () => {
+            doNewSend(["6", [15]]);
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["c", [0, null]]);
+            doNewSend(["13c", [0, 6, 0]]);
+            autoaim = false;
+        }, instaSpeed);
+    }
+        if(e.keyCode == 66 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        autoaim = true;
+        doNewSend(["5", [primary, true]]);
+        doNewSend(["13c", [0, 7, 0]]);
+        doNewSend(["13c", [0, 0, 1]]);
+        doNewSend(["13c", [0, 19, 1]]);
+        place(spikeType, myPlayer.dir + toRad(85));
+        place(spikeType, myPlayer.dir - toRad(85));
+        place(spikeType);
+        doNewSend(["c", [1]]);
+
+        setTimeout( () => {
+            doNewSend(["13c", [0, 53, 0]]);
+        }, 100);
+
+        setTimeout( () => {
+            doNewSend(["c", [0, null]]);
+            doNewSend(["13c", [0, 6, 0]]);
+            autoaim = false;
+        }, 200);
+    }
+    if(e.keyCode == 32 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        autoaim = true;
+        doNewSend(["5", [primary, true]]);
+        doNewSend(["13c", [0, 7, 0]]);
+        doNewSend(["13c", [0, 0, 1]]);
+        doNewSend(["13c", [0, 21, 1]]);
+        place(spikeType);
+        doNewSend(["c", [1]]);
+
+        setTimeout( () => {
+            doNewSend(["13c", [0, 53, 0]]);
+        }, 100);
+
+        setTimeout( () => {
+            doNewSend(["c", [0, null]]);
+            doNewSend(["13c", [0, 6, 0]]);
+            autoaim = false;
+        }, 200);
+    }
+    if(e.keyCode == 38 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        messageToggle = (messageToggle + 1) % 2;
+    }
+
+    if(e.keyCode == 40 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        clanToggle = (clanToggle + 1) % 2;
+    }
+    if(e.keyCode == 106 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        healToggle = (healToggle + 1) % 2;
+        if(healToggle == 0) {
+            if(hatToggle == 0) {
+                document.title = "UnLovableZ#2219"
+            } else {
+                document.title = "Heal - 𝓞𝕱𝕱 | Hat - 𝓞𝓝"
+            }
+        } else {
+            if(hatToggle == 0) {
+                document.title = "Heal - 𝓞𝓝 | Hat - 𝓞𝕱𝕱"
+            } else {
+                document.title = "UnLovableZ#2219"
+            }
+        }
+    }
+    if(e.keyCode == 76 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        autoaim = true;
+        doNewSend(["5", [secondary, true]]);
+        doNewSend(["13c", [0, 53, 0]]);
+        doNewSend(["c", [1]]);
+
+        setTimeout( () => {
+            doNewSend(["6", [12]]);
+        }, 300);
+
+        setTimeout( () => {
+            doNewSend(["6", [15]]);
+        }, 300);
+
+        setTimeout( () => {
+            doNewSend(["c", [0]]);
+            doNewSend(["13c", [0, 6, 0]]);
+            doNewSend(["5", [primary, true]]);
+            autoaim = false;
+        }, 300);
+    }
+        if(e.keyCode == 100 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["6", [3]]);
+        doNewSend(["6", [17]]);
+        doNewSend(["6", [31]]);
+        doNewSend(["6", [23]]);
+        doNewSend(["6", [11]]);
+        doNewSend(["6", [38]]);
+        doNewSend(["6", [4]]);
+            }
+        if(e.keyCode == 101 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+
+        doNewSend(["6", [3]]);
+        doNewSend(["6", [17]]);
+        doNewSend(["6", [31]]);
+        doNewSend(["6", [23]]);
+        doNewSend(["6", [10]]);
+        doNewSend(["6", [38]]);
+        doNewSend(["6", [4]]);
+            }
+        if(e.keyCode == 102 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+
+        doNewSend(["6", [3]]);
+        doNewSend(["6", [17]]);
+        doNewSend(["6", [31]]);
+        doNewSend(["6", [23]]);
+        doNewSend(["6", [9]]);
+        doNewSend(["6", [38]]);
+        doNewSend(["6", [4]]);
+        doNewSend(["6", [15]]);
+            }
+
+
+    if(e.keyCode == 103 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["6", [5]]);
+        doNewSend(["6", [17]]);
+        doNewSend(["6", [31]]);
+        doNewSend(["6", [23]]);
+        doNewSend(["6", [9]]);
+        doNewSend(["6", [38]]);
+        doNewSend(["6", [12]]);
+        doNewSend(["6", [15]]);
+
+    }
+
+    if(e.keyCode == 97 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["6", [4]]);
+    }
+
+    if(e.keyCode == 98 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["6", [15]]);
+    }
+    if(e.keyCode == 99 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["6", [28]]);
+    }
+    if(e.keyCode == 105 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["6", [28]]);
+        doNewSend(["6", [25]]);
+    }
+    if(e.keyCode == 111 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        hatToggle = (hatToggle + 1) % 2;
+        if(healToggle == 0) {
+            if(hatToggle == 0) {
+                document.title = "UnLovableZ#2219, Mojaster-X"
+            } else {
+                document.title = "Heal - 𝓞𝕱𝕱 | Hat - 𝓞𝓝"
+            }
+        } else {
+            if(hatToggle == 0) {
+                document.title = "Heal - 𝓞𝓝 | Hat - 𝓞𝕱𝕱"
+            } else {
+                document.title = "UnLovableZ#2219, Mojaster-X"
+            }
+        }
+    }
+})
+
+document.addEventListener('keyup', (e)=>{
+    spikePlacer.stop(e.keyCode);
+    boostPlacer.stop(e.keyCode);
+    boostSpiker.stop(e.keyCode);
+    millPlacer.stop(e.keyCode);
+    turretPlacer.stop(e.keyCode);
+    healer.stop(e.keyCode);
+    if(e.keyCode == 71 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        setTimeout( () => {
+            doNewSend(["33", [null]]);
+            boostDir = null;
+        }, 10);
+    }
+})
+
+
+function isElementVisible(e) {
+    return (e.offsetParent !== null);
+}
+
+
+function toRad(angle) {
+    return angle * 0.01745329251;
+}
+
+function dist(a, b){
+    return Math.sqrt( Math.pow((b.y-a[2]), 2) + Math.pow((b.x-a[1]), 2) );
+}
+
+function animate(space, chance) {
+    let result = '';
+    let characters;
+    if(space) {
+        characters = '!~~BestHack2021~~!';
+    } else {
+        characters = 'AQUA'
+    }
+    if(space) {
+        characters = characters.padStart((30 - characters.length) / 2 + characters.length)
+        characters = characters.padEnd(30);
+    }
+    let count = 0;
+    for (let i = 0; i < characters.length; i++ ) {
+       if(Math.floor(Math.random() * chance) == 1 && characters.charAt(i) != "-" && count < 2 && characters.charAt(i) != " ") {
+           result += "";
+           count++
+       } else {
+           result += characters.charAt(i);
+       }
+    }
+    return result;
+}
+
+
+function update() {
+    for (let i=0;i<9;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            primary = i;
+        }
+    }
+
+    for (let i=9;i<16;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            secondary = i;
+        }
+    }
+
+    for (let i=16;i<19;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            foodType = i - 16;
+        }
+    }
+
+    for (let i=19;i<22;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            wallType = i - 16;
+        }
+    }
+
+    for (let i=22;i<26;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            spikeType = i - 16;
+        }
+    }
+
+    for (let i=26;i<29;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            millType = i - 16;
+        }
+    }
+
+    for (let i=29;i<31;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            mineType = i - 16;
+        }
+    }
+
+    for (let i=31;i<33;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            boostType = i - 16;
+        }
+    }
+
+    for (let i=33;i<39;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString())) && i != 36){
+            turretType = i - 16;
+        }
+    }
+
+    spawnpadType = 36;
+}
+
+var autoreloadloop;
+var autoreloadenough = 0;
+
+autoreloadloop = setInterval(function() {
+    if (autoreloadenough < 200) {
+        if (document.getElementById("loadingText").innerHTML == `disconnected<a href="javascript:window.location.href=window.location.href" class="ytLink">reload</a>`) {
+            document.title = "Moo Moo";
+            clearInterval(autoreloadloop);
+            setTimeout(function() {}, 1000)
+            location.reload();
+        }
+        autoreloadenough++;
+    } else if (autoreloadenough >= 300) {
+        clearInterval(autoreloadloop);
+        setTimeout(function() {}, 1000)
+    }
+}, 50);
+
+var sec = 0;
+var Menit = 0;
+var Houre = 0;
+setInterval(() => {
+setTimeout( () => {
+    sec = (sec + 1)
+        function getRandom(min,max){
+    return Math.floor(Math.random()*max)+min;
+};
+let RandomMsg=(getRandom(1,4)).toString();
+    switch(RandomMsg){
+         case '1':
+       document.getElementById('ClockDiv').style.color = "#ff0000";
+            break;
+         case '2':
+       document.getElementById('ClockDiv').style.color = "#00f2de";
+            break;
+
+        case '3':
+       document.getElementById('ClockDiv').style.color = "#1e00ff";
+            break;
+       case '4':
+        document.getElementById('ClockDiv').style.color = "#ff00ee";
+            break;
+    }
+}, 0);
+}, 1000);
+    setInterval(() => {
+        setTimeout(() => {
+            document.getElementById('SDiv').style.color = "#ff0000";
+            setTimeout(() => {
+                document.getElementById('SDiv').style.color = "#00f2de";
+                setTimeout(() => {
+                    document.getElementById('SDiv').style.color = "#1e00ff";
+                    setTimeout(() => {
+                        document.getElementById('SDiv').style.color = "#ff00ee";
+                    }, 100);
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 500);
+    setInterval(() => {
+        setTimeout(() => {
+            document.getElementById('wDiv').style.color = "#ff0000";
+            setTimeout(() => {
+                document.getElementById('wDiv').style.color = "#00f2de";
+                setTimeout(() => {
+                    document.getElementById('wDiv').style.color = "#1e00ff";
+                    setTimeout(() => {
+                        document.getElementById('wDiv').style.color = "#ff00ee";
+                    }, 100);
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 500);
+    setInterval(() => {
+        setTimeout(() => {
+            document.getElementById('dDiv').style.color = "#ff0000";
+            setTimeout(() => {
+                document.getElementById('dDiv').style.color = "#00f2de";
+                setTimeout(() => {
+                    document.getElementById('dDiv').style.color = "#1e00ff";
+                    setTimeout(() => {
+                        document.getElementById('dDiv').style.color = "#ff00ee";
+                    }, 100);
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 500);
+    setInterval(() => {
+        setTimeout(() => {
+            document.getElementById('aDiv').style.color = "#ff0000";
+            setTimeout(() => {
+                document.getElementById('aDiv').style.color = "#00f2de";
+                setTimeout(() => {
+                    document.getElementById('aDiv').style.color = "#1e00ff";
+                    setTimeout(() => {
+                        document.getElementById('aDiv').style.color = "#ff00ee";
+                    }, 100);
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 500);
+    setInterval(() => {
+        setTimeout(() => {
+            document.getElementById('x011Div').style.color = "#00ffff";
+            setTimeout(() => {
+                document.getElementById('x011Div').style.color = "#00ffff";
+                setTimeout(() => {
+                    document.getElementById('x011Div').style.color = "#00ffff";
+                    setTimeout(() => {
+                        document.getElementById('x011Div').style.color = "#00ffff";
+                    }, 100);
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 500);
+    setInterval(() => {
+        setTimeout(() => {
+            document.getElementById('x013Div').style.color = "#00ffff";
+            setTimeout(() => {
+                document.getElementById('x013Div').style.color = "#00ffff";
+                setTimeout(() => {
+                    document.getElementById('x013Div').style.color = "#00ffff";
+                    setTimeout(() => {
+                        document.getElementById('x013Div').style.color = "#00ffff";
+                    }, 100);
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 500);
+    setInterval(() => {
+        setTimeout(() => {
+            document.getElementById('QDiv').style.color = "#00ffff";
+            setTimeout(() => {
+                document.getElementById('QDiv').style.color = "#00ffff";
+                setTimeout(() => {
+                    document.getElementById('QDiv').style.color = "#00ffff";
+                    setTimeout(() => {
+                        document.getElementById('QDiv').style.color = "#00ffff";
+                    }, 100);
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 500);
+    setInterval(() => {
+        setTimeout(() => {
+            document.getElementById('x012Div').style.color = "#00ffff";
+            setTimeout(() => {
+                document.getElementById('x012Div').style.color = "#00ffff";
+                setTimeout(() => {
+                    document.getElementById('x012Div').style.color = "#00ffff";
+                    setTimeout(() => {
+                        document.getElementById('x012Div').style.color = "#00ffff";
+                    }, 100);
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 500);
+    setInterval(() => {
+        setTimeout(() => {
+            document.getElementById('SLOLDiv').style.color = "#00ffff";
+            setTimeout(() => {
+                document.getElementById('SLOLDiv').style.color = "#00ffff";
+                setTimeout(() => {
+                    document.getElementById('SLOLDiv').style.color = "#00ffff";
+                    setTimeout(() => {
+                        document.getElementById('SLOLDiv').style.color = "#00ffff";
+                    }, 100);
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 500);
+
+
+setInterval(() => {
+    if(sec == 60){
+        sec = 0;
+        Menit = (Menit + 1)
+    }
+        }, 0);
+setInterval(() => {
+if(Menit == 60){
+   Menit = 0;
+    Houre = (Houre + 1)
+}
+    }, 0);
+  var Clock = document.createElement("div");
+  Clock.style.padding = "5px";
+Clock.id = "ClockDiv";
+  Clock.style.font = "30px Arial";
+  Clock.style.display = "block";
+  Clock.style.position = "fixed";
+  Clock.style.top = "0%";
+  Clock.style.left = "0%";
+Clock.textContent = "Loading";
+  document.body.appendChild(Clock);
+setInterval(()=>{
+Clock.textContent = "⌤Time⌤〘 "+Houre+":"+Menit+":"+sec+' 〙';
+}, 0);
+
+$('.menuCard').css({'white-space': 'normal',
+                    'text-align': 'center',
+                    'background-color': 'rgba(0, 0, 0, 0.74)',
+                    '-moz-box-shadow': '0px 0px rgba(255, 255, 255, 0)',
+                    '-webkit-box-shadow': '0px 0px rgba(255, 255, 255, 0)',
+                    'box-shadow': '0px 0px rgba(255, 255, 255, 0)',
+                    '-webkit-border-radius': '0px',
+                    '-moz-border-radius': '0px',
+                    'border-radius': '0px',
+                    'margin': '15px',
+                    'margin-top': '15px'});
+
+$('.menuCard').css({'color':'#808080'});
+
+
+$('#menuContainer').css({'white-space': 'normal'});
+
+
+$('#guideCard').css({'color': '#00ffff'});
+
+$('.killCounter').css({'color': '#00ffff'});
+
+$('#nativeResolution').css({'cursor': 'pointer'});
+
+$('#playMusic').css({'cursor': 'pointer'});
+
+$('#skinColorHolder').css({'margin-bottom': '30.75px'});
+
+$('.settingRadio').css({'margin-bottom': '30.75px'});
+
+$('#gameName').css({'color': '#00ffff',
+                    'text-shadow': '0 1px 0 rgba(255, 255, 255, 0), 0 2px 0 rgba(255, 255, 255, 0), 0 3px 0 rgba(255, 255, 255, 0), 0 4px 0 rgba(255, 255, 255, 0), 0 5px 0 rgba(255, 255, 255, 0), 0 6px 0 rgba(255, 255, 255, 0), 0 7px 0 rgba(255, 255, 255, 0), 0 8px 0 rgba(255, 255, 255, 0), 0 9px 0 rgba(255, 255, 255, 0)',
+                    'text-align': 'center',
+                    'font-size': '126px',
+                    'margin-bottom': '-30px'});
+
+$('#loadingText').css({'color': '#00ffff',
+                       'background-color': 'rgba(0, 0, 0, 0.74)',
+                       'padding': '8px',
+                       'right': '150%',
+                       'left': '150%',
+                       'margin-top': '40px'});
+
+$('.ytLink').css({'color': '#00ffff',
+                  'padding': '8px',
+                  'background-color': 'rgba(0, 0, 0, 0.74)'});
+
+$('.menuLink').css({'color': '#00ffff'});
+
+$('.menuButton').css({'background-color': '#00ffff'});
+
+
+$('#nameInput').css({'border-radius': '0px',
+                     '-moz-border-radius': '0px',
+                     '-webkit-border-radius': '0px',
+                     'border': 'hidden'});
+
+
+$('#serverSelect').css({'cursor': 'pointer',
+                        'color': '#00ffff',
+                        'background-color': '#0B3B39',
+                        'border': 'hidden',
+                        'font-size': '20px'});
+
+$('.menuButton').css({'border-radius': '0px',
+                      '-moz-border-radius': '0px',})
+
+
+style.type = 'text/css';
+if (style.styleSheet){
+    style.styleSheet.cssText = css;
+} else {
+    style.appendChild(document.createTextNode(css));
+}
+
+for ( let i = 0; i < hideSelectors.length; i++ ) {
+    $(hideSelectors[i]).hide();
+}
+head.appendChild(style);
+$('#linksContainer2').html('<a href="./docs/versions.txt" target="_blank" class="menuLink">' + moomooVer + '</a>');
+
+// document.getElementById("gameUI").style.backgroundImage = "url('')";
+// document.getElementById("mainMenu").style.backgroundImage = "url('')";
+document.getElementById('enterGame').innerHTML = '𝓢𝓣𝓐𝓡𝓣';
+document.getElementById('loadingText').innerHTML = ' . . . . . . . Loading ProJect AQUA . . . . . . . ';
+document.getElementById('nameInput').placeholder = "𝓦𝓻𝓲𝓽𝓮 𝓤𝓼𝓮𝓻𝓷𝓪𝓶𝓮...";
+document.getElementById('chatBox').placeholder = "Ch𝓐t";
+document.getElementById('diedText').innerHTML = '𝓨𝓸𝓾 𝓓𝓘𝓔𝓓';
+document.getElementById('diedText').style.color = "#00ffff";
+$( "#errorNotification" ).after( '<div id="moddedMenu"><div class="titleMM">ᴘʀᴏᴊᴇᴄᴛ ᴀQᴜᴀ</div><div class="one"><label class="switch"></span></label><div class="two"><div class="text">,Menu Made By UnLovableZ#2219<b></b></div></div><label class="container">Insane AutoHeal??<input type="InsaneHealToggle" id="myChecksss"><span class="checkmark"></span></label><label');
+
+document.getElementById("storeHolder").style = "height: 1500px; width: 450px;"
+
+document.getElementById('adCard').remove();
+document.getElementById('errorNotification').remove();
+
+document.getElementById("leaderboard").style.color = "#00ffff";
+document.getElementById("gameName").style.color = "#00ffff";
+document.getElementById("setupCard").style.color = "#00ffff";
+document.getElementById("gameName").innerHTML = "⇘】ᴘʀᴏᴊᴇᴄᴛ ᴀQᴜᴀ【⇙"
+document.getElementById("promoImg").remove();
+document.getElementById("scoreDisplay").style.color = "Gold";
+document.getElementById("woodDisplay").style.color = "Brown";
+document.getElementById("stoneDisplay").style.color = "Gray";
+document.getElementById("killCounter").style.color = "white";
+document.getElementById("foodDisplay").style.color = "Red";
+document.getElementById("ageText").style.color = "#00ffff";
+document.getElementById("allianceButton").style.color = "#00ffff";
+document.getElementById("chatButton").style.color = "#00ffff";
+document.getElementById("storeButton").style.color = "#00ffff";
+var HPDATA
+var ChatMod = true;
+if(ChatMod == true){
+    setInterval(getkills, 0);
+
+    function getkills() {
+        count2 = parseInt(document.getElementById("killCounter").innerText);
+        if (count2 > kills) {
+            doNewSend(["ch", ["aQua : " + count2 + " Kills"]]);
+        }
+        kills = count2;
+    }
+                }
+
+//cps
+var cps = 0;
+var iCliked = 1;
+$("#gameCanvas").mousedown(function(e){
+        	if(e.which == 1 && iCliked == 1)
+        		{
+                    cps = (cps + 1)
+setTimeout( () => {
+    cps = (cps - 1)
+}, 950);
+                }
+    	});
+$("#gameCanvas").mousedown(function(e){
+        	if(e.which == 3 && iCliked == 1)
+        		{
+                    cps = (cps + 1)
+                    setTimeout( () => {
+    cps = (cps - 1)
+}, 950);
+                }
+    	});
+document.addEventListener("mousedown", buttonPress, false);
+function buttonPress(e) {
+    if(e.button==1 && iCliked == 1)
+    {
+cps = (cps + 1)
+        setTimeout( () => {
+    cps = (cps - 1)
+}, 950);
+        }
+ 	       }
+
+	document.addEventListener('keydown', function (e) {
+        if(e.keyCode == 16){
+               SendKeys.Send("{F3}");
+        }
+        });
+  var CpsMenu = document.createElement("div");
+  CpsMenu.style.padding = "5px";
+CpsMenu.id = "CpsDiv";
+  CpsMenu.style.font = "30px Arial";
+  CpsMenu.style.display = "block";
+  CpsMenu.style.position = "fixed";
+  CpsMenu.style.top = "0%";
+  CpsMenu.style.left = "45%";
+CpsMenu.textContent = "Loading";
+  document.body.appendChild(CpsMenu);
+setInterval(()=>{
+CpsMenu.textContent = "Cps:"+cps;
+}, 0);
+
+	function bn() {
+		var e = function() {
+			var e = 0,
+				t = 0;
+			if (-1 != re.id) e += re.currentX - re.startX, t += re.currentY - re.startY;
+			else
+				for (var n in mn) {
+					var i = mn[n];
+					e += !!gn[n] * i[0], t += !!gn[n] * i[1]
+				}
+			return 0 == e && 0 == t ? void 0 : s.fixTo(Math.atan2(t, e), 2)
+		}();
+		(null == wn || null == e || Math.abs(e - wn) > .3) && (r.send("33", e), wn =
+			e)
+	}
+
+	function xn() {
+		r.send("14", 1)
+	}
+
+	function Sn(e, t) {
+		r.send("5", e, t)
+	}
+
+	function Tn() {
+		I("moo_name", Le.value), !le && r.connected && (le = !0, x.stop("menu"), dt(
+			"Loading..."), r.send("sp", {
+			name: Le.value,
+			moofoll: H,
+			skin: ae
+		}))
+	}
+	var In = !0;
+
+	function En(e) {
+		Pe.style.display = "none", Me.style.display = "block", he.style.display =
+			"none", gn = {}, j = e, O = 0, le = !0, In && (In = !1, N.length = 0)
+	}
+
+	function Mn(e, t, n, i) {
+		m.showText(e, t, 50, .18, 500, Math.abs(n), n >= 0 ? "#fff" : "#8ecc51")
+	}
+	var An = 99999;
+
+	function Pn() {
+		le = !1;
+		try {
+			factorem.refreshAds([2], !0)
+		} catch (e) {}
+		Be.style.display = "none", Qt(), It = {
+				x: R.x,
+				y: R.y
+			}, Pe.style.display = "none", Ge.style.display = "block", Ge.style.fontSize =
+			"0px", An = 0, setTimeout((function() {
+				Me.style.display = "block", he.style.display = "block", Ge.style.display =
+					"none"
+			}), o.deathFadeout), gt()
+	}
+
+	function Bn(e) {
+		R && nt.removeAllItems(e)
+	}
+
+	function Cn(e) {
+		nt.disableBySid(e)
+	}
+
+	function On() {
+		Oe.innerText = R.points, Re.innerText = R.food, je.innerText = R.wood, _e.innerText =
+			R.stone, Ue.innerText = R.kills
+	}
+	var Rn = {},
+		jn = ["crown", "skull"],
+		_n = [];
+
+	function Un(e, t) {
+		if (R.upgradePoints = e, R.upgrAge = t, e > 0) {
+			_n.length = 0, s.removeAllChildren(Ve);
+			for (var n = 0; n < l.weapons.length; ++n) l.weapons[n].age == t && (null ==
+				l.weapons[n].pre || R.weapons.indexOf(l.weapons[n].pre) >= 0) && (s.generateElement({
+					id: "upgradeItem" + n,
+					class: "actionBarItem",
+					onmouseout: function() {
+						Tt()
+					},
+					parent: Ve
+				}).style.backgroundImage = document.getElementById("actionBarItem" + n).style
+				.backgroundImage, _n.push(n));
+			for (n = 0; n < l.list.length; ++n)
+				if (l.list[n].age == t && (null == l.list[n].pre || R.items.indexOf(l.list[
+						n].pre) >= 0)) {
+					var i = l.weapons.length + n;
+					s.generateElement({
+							id: "upgradeItem" + i,
+							class: "actionBarItem",
+							onmouseout: function() {
+								Tt()
+							},
+							parent: Ve
+						}).style.backgroundImage = document.getElementById("actionBarItem" + i)
+						.style.backgroundImage, _n.push(i)
+				}
+			for (n = 0; n < _n.length; n++) ! function(e) {
+				var t = document.getElementById("upgradeItem" + e);
+				t.onmouseover = function() {
+					l.weapons[e] ? Tt(l.weapons[e], !0) : Tt(l.list[e - l.weapons.length])
+				}, t.onclick = s.checkTrusted((function() {
+					r.send("6", e)
+				})), s.hookTouchEvents(t)
+			}(_n[n]);
+			_n.length ? (Ve.style.display = "block", qe.style.display = "block", qe.innerHTML =
+				"SELECT ITEMS (" + e + ")") : (Ve.style.display = "none", qe.style.display =
+				"none", Tt())
+		} else Ve.style.display = "none", qe.style.display = "none", Tt()
+	}
+
+	function Dn(e, t, n) {
+		null != e && (R.XP = e), null != t && (R.maxXP = t), null != n && (R.age =
+				n), n == o.maxAge ? (ze.innerHTML = "MAX AGE", He.style.width = "100%") :
+			(ze.innerHTML = "AGE " + R.age, He.style.width = R.XP / R.maxXP * 100 +
+				"%")
+	}
+
+	function Ln(e) {
+		s.removeAllChildren(De);
+		for (var t = 1, n = 0; n < e.length; n += 3) ! function(n) {
+			s.generateElement({
+				class: "leaderHolder",
+				parent: De,
+				children: [s.generateElement({
+					class: "leaderboardItem",
+					style: "color:" + (e[n] == j ? "#fff" : "rgba(255,255,255,0.6)"),
+					text: t + ". " + ("" != e[n + 1] ? e[n + 1] : "unknown")
+				}), s.generateElement({
+					class: "leaderScore",
+					text: s.kFormat(e[n + 2]) || "0"
+				})]
+			})
+		}(n), t++
+	}
+
+	function Fn(e, t, n, i) {
+		be.save(), be.setTransform(1, 0, 0, 1, 0, 0), be.scale(V, V);
+		var r = 50;
+		be.beginPath(), be.arc(e, t, r, 0, 2 * Math.PI, !1), be.closePath(), be.fillStyle =
+			"rgba(255, 255, 255, 0.3)", be.fill(), r = 50;
+		var s = n - e,
+			a = i - t,
+			o = Math.sqrt(Math.pow(s, 2) + Math.pow(a, 2)),
+			c = o > r ? o / r : 1;
+		s /= c, a /= c, be.beginPath(), be.arc(e + s, t + a, .5 * r, 0, 2 * Math.PI, !
+			1), be.closePath(), be.fillStyle = "white", be.fill(), be.restore()
+	}
+
+	function zn(e, t, n) {
+		for (var i = 0; i < G.length; ++i)(_ = G[i]).active && _.layer == e && (_.update(
+			P), _.active && ki(_.x - t, _.y - n, _.scale) && (be.save(), be.translate(
+			_.x - t, _.y - n), be.rotate(_.dir), Vn(0, 0, _, be, 1), be.restore()))
+	}
+	var Hn = {};
+
+	function Vn(e, t, n, i, r) {
+		if (n.src) {
+			var s = l.projectiles[n.indx].src,
+				a = Hn[s];
+			a || ((a = new Image).onload = function() {
+				this.isLoaded = !0
+			}, a.src = ".././img/weapons/" + s + ".png", Hn[s] = a), a.isLoaded && i.drawImage(
+				a, e - n.scale / 2, t - n.scale / 2, n.scale, n.scale)
+		} else 1 == n.indx && (i.fillStyle = "#939393", si(e, t, n.scale, i))
+	}
+
+	function qn(e, t, n, i) {
+		var r = o.riverWidth + i,
+			s = o.mapScale / 2 - t - r / 2;
+		s < ce && s + r > 0 && n.fillRect(0, s, oe, r)
+	}
+
+	function Yn(e, t, n) {
+		for (var i, r, s, a = 0; a < N.length; ++a)(_ = N[a]).active && (r = _.x +
+			_.xWiggle - t, s = _.y + _.yWiggle - n, 0 == e && _.update(P), _.layer ==
+			e && ki(r, s, _.scale + (_.blocker || 0)) && (be.globalAlpha = _.hideFromEnemy ?
+				.6 : 1, _.isItem ? (i = ri(_), be.save(), be.translate(r, s), be.rotate(
+					_.dir), be.drawImage(i, -i.width / 2, -i.height / 2), _.blocker && (be
+					.strokeStyle = "#db6e6e", be.globalAlpha = .3, be.lineWidth = 6, si(0,
+						0, _.blocker, be, !1, !0)), be.restore()) : (i = ni(_), be.drawImage(i,
+					r - i.width / 2, s - i.height / 2))))
+	}
+
+	function Wn(e, t, n) {
+		(_ = Ii(e)) && _.startAnim(t, n)
+	}
+
+	function Xn(e, t, n) {
+		be.globalAlpha = 1;
+		for (var i = 0; i < W.length; ++i)(_ = W[i]).zIndex == n && (_.animate(P),
+			_.visible && (_.skinRot += .002 * P, L = (_ == R ? pn() : _.dir) + _.dirPlus,
+				be.save(), be.translate(_.x - e, _.y - t), be.rotate(L), Nn(_, be), be.restore()
+			))
+	}
+
+	function Nn(e, t) {
+		(t = t || be).lineWidth = 5.5, t.lineJoin = "miter";
+		var n = Math.PI / 4 * (l.weapons[e.weaponIndex].armS || 1),
+			i = e.buildIndex < 0 && l.weapons[e.weaponIndex].hndS || 1,
+			r = e.buildIndex < 0 && l.weapons[e.weaponIndex].hndD || 1;
+		if (e.tailIndex > 0 && function(e, t, n) {
+				if (!(Gn = Qn[e])) {
+					var i = new Image;
+					i.onload = function() {
+							this.isLoaded = !0, this.onload = null
+						}, i.src = ".././img/accessories/access_" + e + ".png", Qn[e] = i, Gn =
+						i
+				}
+				var r = $n[e];
+				if (!r) {
+					for (var s = 0; s < tt.length; ++s)
+						if (tt[s].id == e) {
+							r = tt[s];
+							break
+						}
+					$n[e] = r
+				}
+				Gn.isLoaded && (t.save(), t.translate(-20 - (r.xOff || 0), 0), r.spin &&
+					t.rotate(n.skinRot), t.drawImage(Gn, -r.scale / 2, -r.scale / 2, r.scale,
+						r.scale), t.restore())
+			}(e.tailIndex, t, e), e.buildIndex < 0 && !l.weapons[e.weaponIndex].aboveHand &&
+			(ei(l.weapons[e.weaponIndex], o.weaponVariants[e.weaponVariant].src, e.scale,
+					0, t), null == l.weapons[e.weaponIndex].projectile || l.weapons[e.weaponIndex]
+				.hideProjectile || Vn(e.scale, 0, l.projectiles[l.weapons[e.weaponIndex].projectile],
+					be)), t.fillStyle = o.skinColors[e.skinColor], si(e.scale * Math.cos(n),
+				e.scale * Math.sin(n), 14), si(e.scale * r * Math.cos(-n * i), e.scale *
+				r * Math.sin(-n * i), 14), e.buildIndex < 0 && l.weapons[e.weaponIndex].aboveHand &&
+			(ei(l.weapons[e.weaponIndex], o.weaponVariants[e.weaponVariant].src, e.scale,
+					0, t), null == l.weapons[e.weaponIndex].projectile || l.weapons[e.weaponIndex]
+				.hideProjectile || Vn(e.scale, 0, l.projectiles[l.weapons[e.weaponIndex].projectile],
+					be)), e.buildIndex >= 0) {
+			var s = ri(l.list[e.buildIndex]);
+			t.drawImage(s, e.scale - l.list[e.buildIndex].holdOffset, -s.width / 2)
+		}
+		si(0, 0, e.scale, t), e.skinIndex > 0 && (t.rotate(Math.PI / 2), function e(
+			t, n, i, r) {
+			if (!(Gn = Jn[t])) {
+				var s = new Image;
+				s.onload = function() {
+					this.isLoaded = !0, this.onload = null
+				}, s.src = ".././img/hats/hat_" + t + ".png", Jn[t] = s, Gn = s
+			}
+			var a = i || Kn[t];
+			if (!a) {
+				for (var o = 0; o < et.length; ++o)
+					if (et[o].id == t) {
+						a = et[o];
+						break
+					}
+				Kn[t] = a
+			}
+			Gn.isLoaded && n.drawImage(Gn, -a.scale / 2, -a.scale / 2, a.scale, a.scale), !
+				i && a.topSprite && (n.save(), n.rotate(r.skinRot), e(t + "_top", n, a,
+					r), n.restore())
+		}(e.skinIndex, t, null, e))
+	}
+	var Gn, Jn = {},
+		Kn = {},
+		Qn = {},
+		$n = {},
+		Zn = {};
+
+	function ei(e, t, n, i, r) {
+		var s = e.src + (t || ""),
+			a = Zn[s];
+		a || ((a = new Image).onload = function() {
+			this.isLoaded = !0
+		}, a.src = ".././img/weapons/" + s + ".png", Zn[s] = a), a.isLoaded && r.drawImage(
+			a, n + e.xOff - e.length / 2, i + e.yOff - e.width / 2, e.length, e.width
+		)
+	}
+	var ti = {};
+
+	function ni(e) {
+		var t = e.y >= o.mapScale - o.snowBiomeTop ? 2 : e.y <= o.snowBiomeTop ? 1 :
+			0,
+			n = e.type + "_" + e.scale + "_" + t,
+			i = ti[n];
+		if (!i) {
+			var r = document.createElement("canvas");
+			r.width = r.height = 2.1 * e.scale + 5.5;
+			var a = r.getContext("2d");
+			if (a.translate(r.width / 2, r.height / 2), a.rotate(s.randFloat(0, Math.PI)),
+				a.strokeStyle = it, a.lineWidth = 5.5, 0 == e.type)
+				for (var c, l = 0; l < 2; ++l) ai(a, 7, c = _.scale * (l ? .5 : 1), .7 *
+						c), a.fillStyle = t ? l ? "#fff" : "#e3f1f4" : l ? "#b4db62" :
+					"#9ebf57", a.fill(), l || a.stroke();
+			else if (1 == e.type)
+				if (2 == t) a.fillStyle = "#606060", ai(a, 6, .3 * e.scale, .71 * e.scale),
+					a.fill(), a.stroke(), a.fillStyle = "#005700", si(0, 0, .55 * e.scale, a),
+					a.fillStyle = "#8a3900", si(0, 0, .3 * e.scale, a, !0);
+				else {
+					var h;
+					! function(e, t, n, i) {
+						var r, a = Math.PI / 2 * 3,
+							o = Math.PI / 6;
+						e.beginPath(), e.moveTo(0, -i);
+						for (var c = 0; c < 6; c++) r = s.randInt(n + .9, 1.2 * n), e.quadraticCurveTo(
+							Math.cos(a + o) * r, Math.sin(a + o) * r, Math.cos(a + 2 * o) * i,
+							Math.sin(a + 2 * o) * i), a += 2 * o;
+						e.lineTo(0, -i), e.closePath()
+					}(a, 0, _.scale, .7 * _.scale), a.fillStyle = t ? "#e3f1f4" : "#89a54c",
+						a.fill(), a.stroke(), a.fillStyle = t ? "#6a64af" : "#c15555";
+					var u = T / 4;
+					for (l = 0; l < 4; ++l) si((h = s.randInt(_.scale / 3.5, _.scale / 2.3)) *
+						Math.cos(u * l), h * Math.sin(u * l), s.randInt(10, 12), a)
+				}
+			else 2 != e.type && 3 != e.type || (a.fillStyle = 2 == e.type ? 2 == t ?
+				"#938d77" : "#939393" : "#e0c655", ai(a, 3, e.scale, e.scale), a.fill(),
+				a.stroke(), a.fillStyle = 2 == e.type ? 2 == t ? "#b2ab90" : "#bcbcbc" :
+				"#ebdca3", ai(a, 3, .55 * e.scale, .65 * e.scale), a.fill());
+			i = r, ti[n] = i
+		}
+		return i
+	}
+	var ii = [];
+
+	function ri(e, t) {
+		var n = ii[e.id];
+		if (!n || t) {
+			var i = document.createElement("canvas");
+			i.width = i.height = 2.5 * e.scale + 5.5 + (l.list[e.id].spritePadding ||
+				0);
+			var r = i.getContext("2d");
+			if (r.translate(i.width / 2, i.height / 2), r.rotate(t ? 0 : Math.PI / 2),
+				r.strokeStyle = it, r.lineWidth = 5.5 * (t ? i.width / 81 : 1), "apple" ==
+				e.name) {
+				r.fillStyle = "#ffe866", si(0, 0, e.scale, r), r.fillStyle = "#009900";
+				var a = -Math.PI / 2;
+				! function(e, t, n, i, r) {
+					var s = e + 25 * Math.cos(i),
+						a = t + 25 * Math.sin(i);
+					r.moveTo(e, t), r.beginPath(), r.quadraticCurveTo((e + s) / 2 + 10 *
+							Math.cos(i + Math.PI / 2), (t + a) / 2 + 10 * Math.sin(i + Math.PI / 2),
+							s, a), r.quadraticCurveTo((e + s) / 2 - 10 * Math.cos(i + Math.PI / 2),
+							(t + a) / 2 - 10 * Math.sin(i + Math.PI / 2), e, t), r.closePath(), r.fill(),
+						r.stroke()
+				}(e.scale * Math.cos(a), e.scale * Math.sin(a), 0, a + Math.PI / 2, r)
+			} else if ("cookie" == e.name) {
+				r.fillStyle = "#f09c00", si(0, 0, e.scale, r), r.fillStyle = "#ffaf1a";
+				for (var o = T / (h = 4), c = 0; c < h; ++c) si((u = s.randInt(e.scale /
+					2.5, e.scale / 1.7)) * Math.cos(o * c), u * Math.sin(o * c), s.randInt(
+					4, 5), r, !0)
+			} else if ("cheese" == e.name) {
+				var h, u;
+				for (r.fillStyle = "#f4f3ac", si(0, 0, e.scale, r), r.fillStyle =
+					"#c3c28b", o = T / (h = 4), c = 0; c < h; ++c) si((u = s.randInt(e.scale /
+					2.5, e.scale / 1.7)) * Math.cos(o * c), u * Math.sin(o * c), s.randInt(
+					4, 5), r, !0)
+			} else if ("wood wall" == e.name || "stone wall" == e.name ||
+				"castle wall" == e.name) {
+				r.fillStyle = "castle wall" == e.name ? "#83898e" : "wood wall" == e.name ?
+					"#003d3d" : "#003d00";
+				var f = "castle wall" == e.name ? 4 : 3;
+				ai(r, f, 1.1 * e.scale, 1.1 * e.scale), r.fill(), r.stroke(), r.fillStyle =
+					"castle wall" == e.name ? "#c7c000" : "wood wall" == e.name ? "#d6cf00" :
+					"#e0d900", ai(r, f, .65 * e.scale, .65 * e.scale), r.fill()
+			} else if ("spikes" == e.name || "greater spikes" == e.name ||
+				"poison spikes" == e.name || "spinning spikes" == e.name) {
+				r.fillStyle = "poison spikes" == e.name ? "#4d4dff" : "#fff70a";
+				var d = .6 * e.scale;
+				ai(r, "spikes" == e.name ? 5 : 6, e.scale, d), r.fill(), r.stroke(), r.fillStyle =
+					"#a5974c", si(0, 0, d, r), r.fillStyle = "#c9b758", si(0, 0, d / 2, r, !
+						0)
+			} else if ("windmill" == e.name || "faster windmill" == e.name ||
+				"power mill" == e.name) r.fillStyle = "#FFFFFF", si(0, 0, e.scale, r), r.fillStyle =
+				"#00FFFF", ci(0, 0, 1.5 * e.scale, 29, 4, r), r.fillStyle = "#e69500", si(
+					0, 0, .5 * e.scale, r);
+			else if ("mine" == e.name) r.fillStyle = "#939393", ai(r, 3, e.scale, e.scale),
+				r.fill(), r.stroke(), r.fillStyle = "#bcbcbc", ai(r, 3, .55 * e.scale,
+					.65 * e.scale), r.fill();
+			else if ("sapling" == e.name)
+				for (c = 0; c < 2; ++c) ai(r, 7, d = e.scale * (c ? .5 : 1), .7 * d), r.fillStyle =
+					c ? "#ffc14d" : "#C0C0C0", r.fill(), c || r.stroke();
+			else if ("pit trap" == e.name) r.fillStyle = "#008080", ai(r, 3, 1.1 * e.scale,
+				1.1 * e.scale), r.fill(), r.stroke(), r.fillStyle = it, ai(r, 3, .65 * e
+				.scale, .65 * e.scale), r.fill();
+			else if ("boost pad" == e.name) r.fillStyle = "#00e6e6", oi(0, 0, 2 * e.scale,
+					2 * e.scale, r), r.fill(), r.stroke(), r.fillStyle = "#7900d6",
+				function(e, t) {
+					t = t || be;
+					var n = e * (Math.sqrt(3) / 2);
+					t.beginPath(), t.moveTo(0, -n / 2), t.lineTo(-e / 2, n / 2), t.lineTo(e /
+						2, n / 2), t.lineTo(0, -n / 2), t.fill(), t.closePath()
+				}(1 * e.scale, r);
+			else if ("turret" == e.name) r.fillStyle = "#004d4d", si(0, 0, e.scale, r),
+				r.fill(), r.stroke(), r.fillStyle = "#000000", oi(0, -25, .9 * e.scale,
+					50, r), si(0, 0, .6 * e.scale, r), r.fill(), r.stroke();
+			else if ("platform" == e.name) {
+				r.fillStyle = "#cebd5f";
+				var p = 2 * e.scale,
+					g = p / 4,
+					m = -e.scale / 2;
+				for (c = 0; c < 4; ++c) oi(m - g / 2, 0, g, 2 * e.scale, r), r.fill(), r.stroke(),
+					m += p / 4
+			} else "healing pad" == e.name ? (r.fillStyle = "#004d4d", oi(0, 0, 2 * e.scale,
+					2 * e.scale, r), r.fill(), r.stroke(), r.fillStyle = "#FF0000", ci(0, 0,
+					.65 * e.scale, 20, 4, r, !0)) : "spawn pad" == e.name ? (r.fillStyle =
+					"#fff70a", oi(0, 0, 2 * e.scale, 2 * e.scale, r), r.fill(), r.stroke(),
+					r.fillStyle = "#8200e6", si(0, 0, .6 * e.scale, r)) : "blocker" == e.name ?
+				(r.fillStyle = "#c880ff", si(0, 0, e.scale, r), r.fill(), r.stroke(), r.rotate(
+					Math.PI / 4), r.fillStyle = "#008000", ci(0, 0, .65 * e.scale, 20, 4, r, !
+					0)) : "teleporter" == e.name && (r.fillStyle = "#004d4d", si(0, 0, e.scale,
+						r), r.fill(), r.stroke(), r.rotate(Math.PI / 4), r.fillStyle =
+					"#ff52a8", si(0, 0, .5 * e.scale, r, !0));
+			n = i, t || (ii[e.id] = n)
+		}
+		return n
+	}
+
+	function si(e, t, n, i, r, s) {
+		(i = i || be).beginPath(), i.arc(e, t, n, 0, 2 * Math.PI), s || i.fill(), r ||
+			i.stroke()
+	}
+
+	function ai(e, t, n, i) {
+		var r, s, a = Math.PI / 2 * 3,
+			o = Math.PI / t;
+		e.beginPath(), e.moveTo(0, -n);
+		for (var c = 0; c < t; c++) r = Math.cos(a) * n, s = Math.sin(a) * n, e.lineTo(
+				r, s), a += o, r = Math.cos(a) * i, s = Math.sin(a) * i, e.lineTo(r, s),
+			a += o;
+		e.lineTo(0, -n), e.closePath()
+	}
+
+	function oi(e, t, n, i, r, s) {
+		r.fillRect(e - n / 2, t - i / 2, n, i), s || r.strokeRect(e - n / 2, t - i /
+			2, n, i)
+	}
+
+	function ci(e, t, n, i, r, s, a) {
+		s.save(), s.translate(e, t), r = Math.ceil(r / 2);
+		for (var o = 0; o < r; o++) oi(0, 0, 2 * n, i, s, a), s.rotate(Math.PI / r);
+		s.restore()
+	}
+
+	function li(e) {
+		for (var t = 0; t < e.length;) nt.add(e[t], e[t + 1], e[t + 2], e[t + 3], e[
+			t + 4], e[t + 5], l.list[e[t + 6]], !0, e[t + 7] >= 0 ? {
+			sid: e[t + 7]
+		} : null), t += 8
+	}
+
+	function hi(e, t) {
+		(_ = Mi(t)) && (_.xWiggle += o.gatherWiggle * Math.cos(e), _.yWiggle += o.gatherWiggle *
+			Math.sin(e))
+	}
+
+	function ui(e, t) {
+		(_ = Mi(e)) && (_.dir = t, _.xWiggle += o.gatherWiggle * Math.cos(t + Math.PI),
+			_.yWiggle += o.gatherWiggle * Math.sin(t + Math.PI))
+	}
+
+	function fi(e, t, n, i, r, s, a, o) {
+		lt && (J.addProjectile(e, t, n, i, r, s, null, null, a).sid = o)
+	}
+
+	function di(e, t) {
+		for (var n = 0; n < G.length; ++n) G[n].sid == e && (G[n].range = t)
+	}
+
+	function pi(e) {
+		(_ = Ei(e)) && _.startAnim()
+	}
+
+	function gi(e) {
+		for (var t = 0; t < Y.length; ++t) Y[t].forcePos = !Y[t].visible, Y[t].visible = !
+			1;
+		if (e) {
+			var n = Date.now();
+			for (t = 0; t < e.length;)(_ = Ei(e[t])) ? (_.index = e[t + 1], _.t1 =
+				void 0 === _.t2 ? n : _.t2, _.t2 = n, _.x1 = _.x, _.y1 = _.y, _.x2 = e[t +
+					2], _.y2 = e[t + 3], _.d1 = void 0 === _.d2 ? e[t + 4] : _.d2, _.d2 = e[
+					t + 4], _.health = e[t + 5], _.dt = 0, _.visible = !0) : ((_ = Z.spawn(
+					e[t + 2], e[t + 3], e[t + 4], e[t + 1])).x2 = _.x, _.y2 = _.y, _.d2 = _
+				.dir, _.health = e[t + 5], Z.aiTypes[e[t + 1]].name || (_.name = o.cowNames[
+					e[t + 6]]), _.forcePos = !0, _.sid = e[t], _.visible = !0), t += 7
+		}
+	}
+	var mi = {};
+
+	function yi(e, t) {
+		var n = e.index,
+			i = mi[n];
+		if (!i) {
+			var r = new Image;
+			r.onload = function() {
+				this.isLoaded = !0, this.onload = null
+			}, r.src = ".././img/animals/" + e.src + ".png", i = r, mi[n] = i
+		}
+		if (i.isLoaded) {
+			var s = 1.2 * e.scale * (e.spriteMlt || 1);
+			t.drawImage(i, -s, -s, 2 * s, 2 * s)
+		}
+	}
+
+	function ki(e, t, n) {
+		return e + n >= 0 && e - n <= oe && t + n >= 0 && t - n <= ce
+	}
+
+	function vi(e, t) {
+		var n = function(e) {
+			for (var t = 0; t < W.length; ++t)
+				if (W[t].id == e) return W[t];
+			return null
+		}(e[0]);
+		n || (n = new u(e[0], e[1], o, s, J, nt, W, Y, l, et, tt), W.push(n)), n.spawn(
+				t ? H : null), n.visible = !1, n.x2 = void 0, n.y2 = void 0, n.setData(e),
+			t && (U = (R = n).x, D = R.y, $t(), On(), Dn(), Un(0), Be.style.display =
+				"block")
+	}
+
+	function wi(e) {
+		for (var t = 0; t < W.length; t++)
+			if (W[t].id == e) {
+				W.splice(t, 1);
+				break
+			}
+	}
+
+	function bi(e, t) {
+		R && (R.itemCounts[e] = t)
+	}
+
+	function xi(e, t, n) {
+		R && (R[e] = t, n && On())
+	}
+
+	function Si(e, t) {
+		(_ = Ii(e)) && (_.health = t)
+	}
+
+	function Ti(e) {
+		for (var t = Date.now(), n = 0; n < W.length; ++n) W[n].forcePos = !W[n].visible,
+			W[n].visible = !1;
+		for (n = 0; n < e.length;)(_ = Ii(e[n])) && (_.t1 = void 0 === _.t2 ? t : _
+				.t2, _.t2 = t, _.x1 = _.x, _.y1 = _.y, _.x2 = e[n + 1], _.y2 = e[n + 2],
+				_.d1 = void 0 === _.d2 ? e[n + 3] : _.d2, _.d2 = e[n + 3], _.dt = 0, _.buildIndex =
+				e[n + 4], _.weaponIndex = e[n + 5], _.weaponVariant = e[n + 6], _.team =
+				e[n + 7], _.isLeader = e[n + 8], _.skinIndex = e[n + 9], _.tailIndex = e[
+					n + 10], _.iconIndex = e[n + 11], _.zIndex = e[n + 12], _.visible = !0),
+			n += 13
+	}
+
+	function Ii(e) {
+		for (var t = 0; t < W.length; ++t)
+			if (W[t].sid == e) return W[t];
+		return null
+	}
+
+	function Ei(e) {
+		for (var t = 0; t < Y.length; ++t)
+			if (Y[t].sid == e) return Y[t];
+		return null
+	}
+
+	function Mi(e) {
+		for (var t = 0; t < N.length; ++t)
+			if (N[t].sid == e) return N[t];
+		return null
+	}
+	var Ai = -1;
+
+	function Pi() {
+		var e = Date.now() - Ai;
+		window.pingTime = e, Ie.innerText = "Ping: " + e + " ms"
+	}
+
+	function Bi() {
+		Ai = Date.now(), r.send("pp")
+	}
+
+	function Ci(e) {
+		if (!(e < 0)) {
+			var t = Math.floor(e / 60),
+				n = e % 60;
+			n = ("0" + n).slice(-2), Ee.innerText = "Server restarting in " + t + ":" +
+				n, Ee.hidden = !1
+		}
+	}
+
+	function Oi(e) {
+		window.open(e, "_blank")
+	}
+	window.requestAnimFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame ||
+		window.mozRequestAnimationFrame || function(e) {
+			window.setTimeout(e, 1e3 / 60)
+		},
+		function() {
+			var e = o.mapScale / 2;
+			nt.add(0, e, e + 200, 0, o.treeScales[3], 0), nt.add(1, e, e - 480, 0, o.treeScales[
+				3], 0), nt.add(2, e + 300, e + 450, 0, o.treeScales[3], 0), nt.add(3, e -
+				950, e - 130, 0, o.treeScales[2], 0), nt.add(4, e - 750, e - 400, 0, o.treeScales[
+				3], 0), nt.add(5, e - 700, e + 400, 0, o.treeScales[2], 0), nt.add(6, e +
+				800, e - 200, 0, o.treeScales[3], 0), nt.add(7, e - 260, e + 340, 0, o.bushScales[
+				3], 1), nt.add(8, e + 760, e + 310, 0, o.bushScales[3], 1), nt.add(9, e -
+				800, e + 100, 0, o.bushScales[3], 1), nt.add(10, e - 800, e + 300, 0, l.list[
+				4].scale, l.list[4].id, l.list[10]), nt.add(11, e + 650, e - 390, 0, l.list[
+				4].scale, l.list[4].id, l.list[10]), nt.add(12, e - 400, e - 450, 0, o.rockScales[
+				2], 2)
+		}(),
+		function e() {
+			B = Date.now(), P = B - q, q = B,
+				function() {
+					if (R && (!C || B - C >= 1e3 / o.clientSendRate) && (C = B, r.send("2",
+							pn())), An < 120 && (An += .1 * P, Ge.style.fontSize = Math.min(Math.round(
+							An), 120) + "px"), R) {
+						var e = s.getDistance(U, D, R.x, R.y),
+							t = s.getDirection(R.x, R.y, U, D),
+							n = Math.min(.01 * e * P, e);
+						e > .05 ? (U += n * Math.cos(t), D += n * Math.sin(t)) : (U = R.x, D =
+							R.y)
+					} else U = o.mapScale / 2, D = o.mapScale / 2;
+					for (var i = B - 1e3 / o.serverUpdateRate, a = 0; a < W.length + Y.length; ++
+						a)
+						if ((_ = W[a] || Y[a - W.length]) && _.visible)
+							if (_.forcePos) _.x = _.x2, _.y = _.y2, _.dir = _.d2;
+							else {
+								var c = _.t2 - _.t1,
+									l = (i - _.t1) / c;
+								_.dt += P;
+								var h = Math.min(1.7, _.dt / 170),
+									u = _.x2 - _.x1;
+								_.x = _.x1 + u * h, u = _.y2 - _.y1, _.y = _.y1 + u * h, _.dir = Math
+									.lerpAngle(_.d2, _.d1, Math.min(1.2, l))
+							}
+					var f = U - oe / 2,
+						d = D - ce / 2;
+					o.snowBiomeTop - d <= 0 && o.mapScale - o.snowBiomeTop - d >= ce ? (be.fillStyle =
+							"#b6db66", be.fillRect(0, 0, oe, ce)) : o.mapScale - o.snowBiomeTop -
+						d <= 0 ? (be.fillStyle = "#dbc666", be.fillRect(0, 0, oe, ce)) : o.snowBiomeTop -
+						d >= ce ? (be.fillStyle = "#fff", be.fillRect(0, 0, oe, ce)) : o.snowBiomeTop -
+						d >= 0 ? (be.fillStyle = "#fff", be.fillRect(0, 0, oe, o.snowBiomeTop -
+							d), be.fillStyle = "#b6db66", be.fillRect(0, o.snowBiomeTop - d, oe,
+							ce - (o.snowBiomeTop - d))) : (be.fillStyle = "#b6db66", be.fillRect(0,
+								0, oe, o.mapScale - o.snowBiomeTop - d), be.fillStyle = "#dbc666", be
+							.fillRect(0, o.mapScale - o.snowBiomeTop - d, oe, ce - (o.mapScale - o
+								.snowBiomeTop - d))), In || ((ee += te * o.waveSpeed * P) >= o.waveMax ?
+							(ee = o.waveMax, te = -1) : ee <= 1 && (ee = te = 1), be.globalAlpha =
+							1, be.fillStyle = "#dbc666", qn(f, d, be, o.riverPadding), be.fillStyle =
+							"#91b2db", qn(f, d, be, 250 * (ee - 1))), be.lineWidth = 4, be.strokeStyle =
+						"#000", be.globalAlpha = .06, be.beginPath();
+					for (var p = -U; p < oe; p += ce / 18) p > 0 && (be.moveTo(p, 0), be.lineTo(
+						p, ce));
+					for (var g = -D; g < ce; g += ce / 18) p > 0 && (be.moveTo(0, g), be.lineTo(
+						oe, g));
+					for (be.stroke(), be.globalAlpha = 1, be.strokeStyle = it, Yn(-1, f, d),
+						be.globalAlpha = 1, be.lineWidth = 5.5, zn(0, f, d), Xn(f, d, 0), be.globalAlpha =
+						1, a = 0; a < Y.length; ++a)(_ = Y[a]).active && _.visible && (_.animate(
+						P), be.save(), be.translate(_.x - f, _.y - d), be.rotate(_.dir + _.dirPlus -
+						Math.PI / 2), yi(_, be), be.restore());
+					if (Yn(0, f, d), zn(1, f, d), Yn(1, f, d), Xn(f, d, 1), Yn(2, f, d), Yn(
+							3, f, d), be.fillStyle = "#000", be.globalAlpha = .09, f <= 0 && be.fillRect(
+							0, 0, -f, ce), o.mapScale - f <= oe) {
+						var y = Math.max(0, -d);
+						be.fillRect(o.mapScale - f, y, oe - (o.mapScale - f), ce - y)
+					}
+					if (d <= 0 && be.fillRect(-f, 0, oe + f, -d), o.mapScale - d <= ce) {
+						var k = Math.max(0, -f),
+							v = 0;
+						o.mapScale - f <= oe && (v = oe - (o.mapScale - f)), be.fillRect(k, o.mapScale -
+							d, oe - k - v, ce - (o.mapScale - d))
+					}
+					for (be.globalAlpha = 1, be.fillStyle = "rgba(0, 0, 70, 0.35)", be.fillRect(
+							0, 0, oe, ce), be.strokeStyle = rt, a = 0; a < W.length + Y.length; ++
+						a)
+						if ((_ = W[a] || Y[a - W.length]).visible && (10 != _.skinIndex || _ ==
+								R || _.team && _.team == R.team)) {//〖〗
+							var w = (_.team ? "〖" + _.team + "〗" : "") + (_.isPlayer&&_.sid? "❄️Project | " : "") + (_.name + " | Winter❄️"|| "");
+							if ("" != w) {
+								if (be.font = (_.nameScale || 30) + "px Hammersmith One", be.fillStyle =
+									"#fff", be.textBaseline = "middle", be.textAlign = "center", be.lineWidth =
+									_.nameScale ? 11 : 8, be.lineJoin = "round", be.strokeText(w, _.x -
+										f, _.y - d - _.scale - o.nameY), be.fillText(w, _.x - f, _.y - d -
+										_.scale - o.nameY), _.isLeader && Rn.crown.isLoaded) {
+									var b = o.crownIconScale;
+									k = _.x - f - b / 2 - be.measureText(w).width / 2 - o.crownPad, be.drawImage(
+										Rn.crown, k, _.y - d - _.scale - o.nameY - b / 2 - 5, b, b)
+								}
+								1 == _.iconIndex && Rn.skull.isLoaded && (b = o.crownIconScale, k = _
+									.x - f - b / 2 + be.measureText(w).width / 2 + o.crownPad, be.drawImage(
+										Rn.skull, k, _.y - d - _.scale - o.nameY - b / 2 - 5, b, b))
+                            }
+                            window.items = R.items;
+                            window.w = R.weapons;
+                           (be.textAlign = "center",//hp number
+                            be.fillStyle = "#00ffff",
+                            be.lineJoin = "round",
+                            be.font = "20px Hammersmith One",
+                            be.lineWidth = 6,
+                            be.strokeText(`\nHEALTHBAR:${_.health}/${_.maxHealth}`,_.x - f,_.y - d + _.scale + o.nameY+(34)),
+                            be.fillText(`\nHEALTHBAR:${_.health}/${_.maxHealth}`,_.x - f,_.y - d + _.scale + o.nameY+(34))
+                            )
+                            if(_.isPlayer&&_!=R&&_.team&&_.team==R.team){//tribe tracers
+                            be.lineCap = "round";
+                            be.strokeStyle = "#800000";
+                            be.lineWidth = 3;
+                            be.beginPath();
+                            be.moveTo(R.x-f, R.y-d);
+                            be.lineTo(_.x-f, _.y-d);
+                            be.stroke()
+                            be.strokeStyle = nt;
+                            be.fillText(`\nTEAMMATE`,_.x - f,_.y - d + _.scale + o.nameY+(-72))
+                          }
+                          if(_.isPlayer&&_!=R&&(_.team!=R.team||!_.team)){//enemy tracers
+                            be.lineCap = "round";
+                            be.strokeStyle = "#00ffff";
+                            be.lineWidth = 3;
+                            be.beginPath();
+                            be.moveTo(R.x-f, R.y-d);
+                            be.lineTo(_.x-f, _.y-d);
+                            be.stroke();
+                            be.strokeStyle = nt;
+                            be.fillText(`\nTARGET`,_.x - f,_.y - d + _.scale + o.nameY+(-72))
+                          }
+                          if(!_.isPlayer){//animal tracers
+                            be.lineCap = "round";
+                            be.strokeStyle = "#ff974d";
+                            be.lineWidth = 3;
+                            be.beginPath();
+                            be.moveTo(R.x-f, R.y-d);
+                            be.lineTo(_.x-f, _.y-d);
+                            be.stroke();
+                            be.strokeStyle = nt;
+                            be.fillText(`\nANIMALS`,_.x - f,_.y - d + _.scale + o.nameY+(-102))
+							}
+                            if(_!=R&&_.isPlayer) {
+                            be.font = (_.nameScale || 25) + "px Hammersmith One",
+                            be.fillStyle = "#00ffff",
+                            be.textBaseline = "middle",
+                            be.textAlign = "center",
+                            be.lineWidth = _.nameScale ? 11 : 8,
+                            be.lineJoin = "round",
+                            be.strokeStyle = "black",
+                            be.strokeText(`\n${_.name}`,(R.x-f + _.x-f)/2,(R.y-d +_.y-d)/2),
+                            be.fillText(`\n${_.name}`,(R.x-f + _.x-f)/2,(R.y-d +_.y-d)/2)
+                            }
+							_.health > 0 && (o.healthBarWidth, be.fillStyle = rt, be.roundRect(_.x -
+									f - o.healthBarWidth - o.healthBarPad, _.y - d + _.scale + o.nameY,
+									2 * o.healthBarWidth + 2 * o.healthBarPad, 19, 8), be.fill(), be.fillStyle =
+								_ == R || _.team && _.team == R.team ? "#00ffff" : "#FF00FF", be.roundRect(
+									_.x - f - o.healthBarWidth, _.y - d + _.scale + o.nameY + o.healthBarPad,
+									2 * o.healthBarWidth * (_.health / _.maxHealth), 21 - 2 * o.healthBarPad,
+									7), be.fill())
+						}
+					for (m.update(P, be, f, d), a = 0; a < W.length; ++a)
+						if ((_ = W[a]).visible && _.chatCountdown > 0) {
+							_.chatCountdown -= P, _.chatCountdown <= 0 && (_.chatCountdown = 0),
+								be.font = "32px Hammersmith One";
+							var x = be.measureText(_.chatMessage);
+							be.textBaseline = "middle", be.textAlign = "center", k = _.x - f, y =
+								_.y - _.scale - d - 90;
+							var S = x.width + 17;
+							be.fillStyle = "rgba(0,0,0,0.2)", be.roundRect(k - S / 2, y - 23.5, S,
+								47, 6), be.fill(), be.fillStyle = "#fff", be.fillText(_.chatMessage,
+								k, y)
+						}! function(e) {
+						if (R && R.alive) {
+							Ke.clearRect(0, 0, Ne.width, Ne.height), Ke.strokeStyle = "#fff", Ke.lineWidth =
+								4;
+							for (var t = 0; t < qt.length; ++t)(Vt = qt[t]).update(Ke, e);
+							if (Ke.globalAlpha = 1, Ke.fillStyle = "#fff", si(R.x / o.mapScale *
+									Ne.width, R.y / o.mapScale * Ne.height, 7, Ke, !0), Ke.fillStyle =
+								"rgba(255,255,255,0.35)", R.team && Et)
+								for (t = 0; t < Et.length;) si(Et[t] / o.mapScale * Ne.width, Et[t +
+									1] / o.mapScale * Ne.height, 7, Ke, !0), t += 2;
+							It && (Ke.fillStyle = "#0a0a0a", Ke.font = "34px Hammersmith One", Ke.textBaseline =
+								"middle", Ke.textAlign = "center", Ke.fillText("x", It.x / o.mapScale *
+									Ne.width, It.y / o.mapScale * Ne.height)), Mt && (Ke.fillStyle =
+								"#fff", Ke.font = "34px Hammersmith One", Ke.textBaseline = "middle",
+								Ke.textAlign = "center", Ke.fillText("x", Mt.x / o.mapScale * Ne.width,
+									Mt.y / o.mapScale * Ne.height))
+						}
+					}(P), -1 !== re.id && Fn(re.startX, re.startY, re.currentX, re.currentY), -
+						1 !== se.id && Fn(se.startX, se.startY, se.currentX, se.currentY)
+				}(), requestAnimFrame(e)
+		}(), window.openLink = Oi, window.aJoinReq = Dt, window.follmoo = function() {
+			H || (H = !0, I("moofoll", 1))
+		}, window.kickFromClan = Lt, window.sendJoin = Ft, window.leaveAlliance =
+		Ht, window.createAlliance = zt, window.storeBuy = Kt, window.storeEquip =
+		Jt, window.showItemInfo = Tt, window.selectSkinColor = function(e) {
+			ae = e, en()
+		}, window.changeStoreIndex = function(e) {
+			Xt != e && (Xt = e, Gt())
+		}, window.config = o
+}, function(e, t) {
+	! function(e, t, n) {
+		function i(e, t) {
+			return typeof e === t
+		}
+		var r = [],
+			s = [],
+			a = {
+				_version: "3.5.0",
+				_config: {
+					classPrefix: "",
+					enableClasses: !0,
+					enableJSClass: !0,
+					usePrefixes: !0
+				},
+				_q: [],
+				on: function(e, t) {
+					var n = this;
+					setTimeout((function() {
+						t(n[e])
+					}), 0)
+				},
+				addTest: function(e, t, n) {
+					s.push({
+						name: e,
+						fn: t,
+						options: n
+					})
+				},
+				addAsyncTest: function(e) {
+					s.push({
+						name: null,
+						fn: e
+					})
+				}
+			},
+			o = function() {};
+		o.prototype = a, o = new o;
+		var c = t.documentElement,
+			l = "svg" === c.nodeName.toLowerCase();
+		o.addTest("passiveeventlisteners", (function() {
+				var t = !1;
+				try {
+					var n = Object.defineProperty({}, "passive", {
+						get: function() {
+							t = !0
+						}
+					});
+					e.addEventListener("test", null, n)
+				} catch (e) {}
+				return t
+			})),
+			function() {
+				var e, t, n, a, c, l;
+				for (var h in s)
+					if (s.hasOwnProperty(h)) {
+						if (e = [], (t = s[h]).name && (e.push(t.name.toLowerCase()), t.options &&
+								t.options.aliases && t.options.aliases.length))
+							for (n = 0; n < t.options.aliases.length; n++) e.push(t.options.aliases[
+								n].toLowerCase());
+						for (a = i(t.fn, "function") ? t.fn() : t.fn, c = 0; c < e.length; c++)
+							1 === (l = e[c].split(".")).length ? o[l[0]] = a : (!o[l[0]] || o[l[0]] instanceof Boolean ||
+								(o[l[0]] = new Boolean(o[l[0]])), o[l[0]][l[1]] = a), r.push((a ? "" :
+								"no-") + l.join("-"))
+					}
+			}(),
+			function(e) {
+				var t = c.className,
+					n = o._config.classPrefix || "";
+				if (l && (t = t.baseVal), o._config.enableJSClass) {
+					var i = new RegExp("(^|\\s)" + n + "no-js(\\s|$)");
+					t = t.replace(i, "$1" + n + "js$2")
+				}
+				o._config.enableClasses && (t += " " + n + e.join(" " + n), l ? c.className
+					.baseVal = t : c.className = t)
+			}(r), delete a.addTest, delete a.addAsyncTest;
+		for (var h = 0; h < o._q.length; h++) o._q[h]();
+		e.Modernizr = o
+	}(window, document)
+}, function(e, t, n) {
+	var i = n(24);
+	n(19), e.exports = {
+		socket: null,
+		connected: !1,
+		socketId: -1,
+		connect: function(e, t, n) {
+			if (!this.socket) {
+				var r = this;
+				try {
+					var s = !1,
+						a = e;
+					this.socket = new WebSocket(a), this.socket.binaryType = "arraybuffer",
+						this.socket.onmessage = function(e) {
+							var t = new Uint8Array(e.data),
+								s = i.decode(t),
+								a = s[0];
+							t = s[1], "io-init" == a ? r.socketId = t[0] : n[a].apply(void 0, t)
+						}, this.socket.onopen = function() {
+							r.connected = !0, t()
+						}, this.socket.onclose = function(e) {
+							r.connected = !1, 4001 == e.code ? t("Invalid Connection") : s || t(
+								"disconnected")
+						}, this.socket.onerror = function(e) {
+							this.socket && this.socket.readyState != WebSocket.OPEN && (s = !0,
+								console.error("Socket error", arguments), t("Socket error"))
+						}
+				} catch (e) {
+					console.warn("Socket connection error:", e), t(e)
+				}
+			}
+		},
+		send: function(e) {
+			var t = Array.prototype.slice.call(arguments, 1),
+				n = i.encode([e, t]);
+			this.socket.send(n)
+		},
+		socketReady: function() {
+			return this.socket && this.connected
+		},
+		close: function() {
+			this.socket && this.socket.close()
+		}
+	}
+}, function(e, t, n) {
+	t.encode = n(9).encode, t.decode = n(15).decode, t.Encoder = n(37).Encoder,
+		t.Decoder = n(38).Decoder, t.createCodec = n(39).createCodec, t.codec = n(
+			40).codec
+}, function(e, t, n) {
+	(function(t) {
+		function n(e) {
+			return e && e.isBuffer && e
+		}
+		e.exports = n(void 0 !== t && t) || n(this.Buffer) || n("undefined" !=
+			typeof window && window.Buffer) || this.Buffer
+	}).call(this, n(11).Buffer)
+}, function(e, t, n) {
+	"use strict";
+	t.byteLength = function(e) {
+		var t = l(e),
+			n = t[0],
+			i = t[1];
+		return 3 * (n + i) / 4 - i
+	}, t.toByteArray = function(e) {
+		var t, n, i = l(e),
+			a = i[0],
+			o = i[1],
+			c = new s(function(e, t, n) {
+				return 3 * (t + n) / 4 - n
+			}(0, a, o)),
+			h = 0,
+			u = o > 0 ? a - 4 : a;
+		for (n = 0; n < u; n += 4) t = r[e.charCodeAt(n)] << 18 | r[e.charCodeAt(n +
+				1)] << 12 | r[e.charCodeAt(n + 2)] << 6 | r[e.charCodeAt(n + 3)], c[h++] =
+			t >> 16 & 255, c[h++] = t >> 8 & 255, c[h++] = 255 & t;
+		return 2 === o && (t = r[e.charCodeAt(n)] << 2 | r[e.charCodeAt(n + 1)] >>
+			4, c[h++] = 255 & t), 1 === o && (t = r[e.charCodeAt(n)] << 10 | r[e.charCodeAt(
+				n + 1)] << 4 | r[e.charCodeAt(n + 2)] >> 2, c[h++] = t >> 8 & 255, c[h++] =
+			255 & t), c
+	}, t.fromByteArray = function(e) {
+		for (var t, n = e.length, r = n % 3, s = [], a = 0, o = n - r; a < o; a +=
+			16383) s.push(u(e, a, a + 16383 > o ? o : a + 16383));
+		return 1 === r ? (t = e[n - 1], s.push(i[t >> 2] + i[t << 4 & 63] + "==")) :
+			2 === r && (t = (e[n - 2] << 8) + e[n - 1], s.push(i[t >> 10] + i[t >> 4 &
+				63] + i[t << 2 & 63] + "=")), s.join("")
+	};
+	for (var i = [], r = [], s = "undefined" != typeof Uint8Array ? Uint8Array :
+			Array, a =
+			"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", o = 0,
+			c = a.length; o < c; ++o) i[o] = a[o], r[a.charCodeAt(o)] = o;
+
+	function l(e) {
+		var t = e.length;
+		if (t % 4 > 0) throw new Error(
+			"Invalid string. Length must be a multiple of 4");
+		var n = e.indexOf("=");
+		return -1 === n && (n = t), [n, n === t ? 0 : 4 - n % 4]
+	}
+
+	function h(e) {
+		return i[e >> 18 & 63] + i[e >> 12 & 63] + i[e >> 6 & 63] + i[63 & e]
+	}
+
+	function u(e, t, n) {
+		for (var i, r = [], s = t; s < n; s += 3) i = (e[s] << 16 & 16711680) + (e[
+			s + 1] << 8 & 65280) + (255 & e[s + 2]), r.push(h(i));
+		return r.join("")
+	}
+	r["-".charCodeAt(0)] = 62, r["_".charCodeAt(0)] = 63
+}, function(e, t) {
+	var n = {}.toString;
+	e.exports = Array.isArray || function(e) {
+		return "[object Array]" == n.call(e)
+	}
+}, function(e, t, n) {
+	var i = n(0);
+
+	function r(e) {
+		return new Array(e)
+	}(t = e.exports = r(0)).alloc = r, t.concat = i.concat, t.from = function(e) {
+		if (!i.isBuffer(e) && i.isView(e)) e = i.Uint8Array.from(e);
+		else if (i.isArrayBuffer(e)) e = new Uint8Array(e);
+		else {
+			if ("string" == typeof e) return i.from.call(t, e);
+			if ("number" == typeof e) throw new TypeError(
+				'"value" argument must not be a number')
+		}
+		return Array.prototype.slice.call(e)
+	}
+}, function(e, t, n) {
+	var i = n(0),
+		r = i.global;
+
+	function s(e) {
+		return new r(e)
+	}(t = e.exports = i.hasBuffer ? s(0) : []).alloc = i.hasBuffer && r.alloc ||
+		s, t.concat = i.concat, t.from = function(e) {
+			if (!i.isBuffer(e) && i.isView(e)) e = i.Uint8Array.from(e);
+			else if (i.isArrayBuffer(e)) e = new Uint8Array(e);
+			else {
+				if ("string" == typeof e) return i.from.call(t, e);
+				if ("number" == typeof e) throw new TypeError(
+					'"value" argument must not be a number')
+			}
+			return r.from && 1 !== r.from.length ? r.from(e) : new r(e)
+		}
+}, function(e, t, n) {
+	var i = n(0);
+
+	function r(e) {
+		return new Uint8Array(e)
+	}(t = e.exports = i.hasArrayBuffer ? r(0) : []).alloc = r, t.concat = i.concat,
+		t.from = function(e) {
+			if (i.isView(e)) {
+				var n = e.byteOffset,
+					r = e.byteLength;
+				(e = e.buffer).byteLength !== r && (e.slice ? e = e.slice(n, n + r) : (e =
+					new Uint8Array(e)).byteLength !== r && (e = Array.prototype.slice.call(
+					e, n, n + r)))
+			} else {
+				if ("string" == typeof e) return i.from.call(t, e);
+				if ("number" == typeof e) throw new TypeError(
+					'"value" argument must not be a number')
+			}
+			return new Uint8Array(e)
+		}
+}, function(e, t) {
+	t.copy = function(e, t, n, i) {
+		var r;
+		n || (n = 0), i || 0 === i || (i = this.length), t || (t = 0);
+		var s = i - n;
+		if (e === this && n < t && t < i)
+			for (r = s - 1; r >= 0; r--) e[r + t] = this[r + n];
+		else
+			for (r = 0; r < s; r++) e[r + t] = this[r + n];
+		return s
+	}, t.toString = function(e, t, n) {
+		var i = 0 | t;
+		n || (n = this.length);
+		for (var r = "", s = 0; i < n;)(s = this[i++]) < 128 ? r += String.fromCharCode(
+			s) : (192 == (224 & s) ? s = (31 & s) << 6 | 63 & this[i++] : 224 == (
+				240 & s) ? s = (15 & s) << 12 | (63 & this[i++]) << 6 | 63 & this[i++] :
+			240 == (248 & s) && (s = (7 & s) << 18 | (63 & this[i++]) << 12 | (63 &
+				this[i++]) << 6 | 63 & this[i++]), s >= 65536 ? (s -= 65536, r +=
+				String.fromCharCode(55296 + (s >>> 10), 56320 + (1023 & s))) : r +=
+			String.fromCharCode(s));
+		return r
+	}, t.write = function(e, t) {
+		for (var n = t || (t |= 0), i = e.length, r = 0, s = 0; s < i;)(r = e.charCodeAt(
+			s++)) < 128 ? this[n++] = r : r < 2048 ? (this[n++] = 192 | r >>> 6,
+			this[n++] = 128 | 63 & r) : r < 55296 || r > 57343 ? (this[n++] = 224 |
+			r >>> 12, this[n++] = 128 | r >>> 6 & 63, this[n++] = 128 | 63 & r) : (r =
+			65536 + (r - 55296 << 10 | e.charCodeAt(s++) - 56320), this[n++] = 240 |
+			r >>> 18, this[n++] = 128 | r >>> 12 & 63, this[n++] = 128 | r >>> 6 &
+			63, this[n++] = 128 | 63 & r);
+		return n - t
+	}
