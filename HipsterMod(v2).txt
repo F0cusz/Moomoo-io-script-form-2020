@@ -1,0 +1,971 @@
+// ==UserScript==
+// @name      ☯HipsterMod☯ Fixed
+// @version     LastVersion 2.0
+// @namespace     -
+// @description This is fixed version of HipsterMod
+// @author       Siren
+// @match          *://moomoo.io/*
+// @match          *://dev.moomoo.io/*
+// @match          *://*sandbox.moomoo.io/*
+// @match          *://beta.moomoo.io/*
+// @require https://greasyfork.org/scripts/368273-msgpack/code/msgpack.js?version=598723
+// @require http://code.jquery.com/jquery-3.3.1.min.js
+// @require https://code.jquery.com/ui/1.12.0/jquery-ui.min.js
+// @icon  https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTQlRmy5rzUk2N8A5jJXKx0YQ0ScUdcEDXtLzcnhophX4Agm0c&usqp=CAU
+// @require https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js
+//╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝  ╚═╝░░░░░╚═╝░╚════╝░╚═════╝░
+// original author: Hipster / Fixed By Siren
+// features: too many lazy to write :v
+// ==/UserScript==
+document.getElementById('enterGame').innerHTML = 'Go Kill!';
+document.getElementById('loadingText').innerHTML = ' . . . . . . . Loading HipsterMod . . . . . . . ';
+document.getElementById('nameInput').placeholder = "Hipster";
+document.getElementById('chatBox').placeholder = "say me pro and i kill u";
+document.getElementById('diedText').innerHTML = '.-.';
+document.getElementById('diedText').style.color = "blue";
+
+document.getElementById('adCard').remove();
+document.getElementById('errorNotification').remove();
+
+document.getElementById("leaderboard").style.color = "#180091";
+document.getElementById("setupCard").style.color = "black";
+document.getElementById("gameName").innerHTML = "☯HipsterMod☯"
+document.getElementById("promoImg").remove();
+document.getElementById("allianceButton").style.color = "black";
+document.getElementById("chatButton").style.color = "black";
+document.getElementById("storeButton").style.color = "black";
+$('.menuCard').css({'white-space': 'normal',
+                    'text-align': 'center',
+                    'background-color': 'rgba(0, 0, 0, 0)',
+                    '-moz-box-shadow': '0px 0px rgba(255, 255, 255, 0)',
+                    '-webkit-box-shadow': '0px 0px rgba(255, 255, 255, 0)',
+                    'box-shadow': '0px 0px rgba(255, 255, 255, 0)',
+                    '-webkit-border-radius': '0px',
+                    '-moz-border-radius': '0px',
+                    'border-radius': '0px',
+                    'margin': '15px',
+                    'margin-top': '15px'});
+
+$('#menuContainer').css({'white-space': 'normal'});
+
+$('#nativeResolution').css({'cursor': 'pointer'});
+
+$('#playMusic').css({'cursor': 'pointer'});
+
+$('#guideCard').css({'overflow-y': 'hidden',
+                     'margin-top': 'auto',
+                     'margin-bottom': '30px'});
+
+
+$('#skinColorHolder').css({'margin-bottom': '30.75px'});
+
+$('.settingRadio').css({'margin-bottom': '30.75px'});
+
+$("#ageBarContainer").append('</br><div id="hacktext"></div><div style="width: 100%;position: absolute;bottom: 94px;text-align: center;color:blue;font-size: 24px;" id="freetext"></div><div style="width: 100%;position: absolute;bottom: 144px;text-align: center;color: #ed3f00;font-size: 24px;" id="ptext"></div><div style="width: 100%;position: absolute;bottom: 224px;text-align: center;color: #9a008b;font-size: 24px;" id="ctext"></div><div style="width: 100%;position: absolute;top: 100px;text-align: center;color: white;font-size: 12px;" id="bilgitext">"Left Arrow" Katana Musket | "Right Arrow" GreatAxe Musket | "," Polearm Musket | "." Stick SpinningSpike PowerMill</div><div style="width: 100%;position: absolute;bottom: 170px;text-align: center;color: darkgreen;font-size: 24px;" id="atext"></div><div style="width: 100%;position: absolute;bottom: 196px;text-align: center;color: black;font-size: 24px;" id="mtext"></div>');
+
+
+$('#linksContainer2').css({'-webkit-border-radius': '0px 0 0 0',
+                           '-moz-border-radius': '0px 0 0 0',
+                           'border-radius': '0px 0 0 0',
+                           'right': '44%',
+                           'left': '44%',
+                           'background-color': 'rgba(0, 0, 0, 0)',
+                           'text-align': 'center',
+                           'bottom': '12px'});
+
+$('#gameName').css({'color': '#180091',
+                    'text-shadow': '0 1px 0 #000000, 0 2px 0 #000000, 0 3px 0 #000000, 0 4px 0 #000000, 0 5px 0 #000000',
+                    'text-align': 'center',
+                    'font-size': '156px',
+                    'margin-bottom': '-30px'});
+
+$('#loadingText').css({'color': '#180091',
+                       'background-color': 'rgba(0, 0, 0, 0)',
+                       'padding': '8px',
+                       'right': '150%',
+                       'left': '150%',
+                       'margin-top': '40px'});
+
+$('.ytLink').css({'color': '#180091',
+                  'padding': '8px',
+                  'background-color': 'rgba(0, 0, 0, 0)'});
+
+$('.menuLink').css({'color': '#180091'});
+
+$('#nameInput').css({'border-radius': '0px',
+                     '-moz-border-radius': '0px',
+                     '-webkit-border-radius': '0px',
+                     'border': 'hidden'});
+
+$('#serverSelect').css({'cursor': 'pointer',
+                        'color': '#000000',
+                        'background-color': '#180091',
+                        'border': 'hidden',
+                        'font-size': '20px'});
+
+$('.menuButton').css({'border-radius': '0px',
+                      '-moz-border-radius': '0px',
+                      '-webkit-border-radius': '0px'});
+
+$('#promoImgHolder').css({'position': 'absolute',
+                          'bottom': '-7%',
+                          'left': '20px',
+                          'width': '420px',
+                          'height': '236.25px',
+                          'padding-bottom': '18px',
+                          'margin-top': '0px'});
+
+$('#adCard').css({'position': 'absolute',
+                  'bottom': '-7%',
+                  'right': '20px',
+                  'width': '420px',
+                  'height': '236.25px',
+                  'padding-bottom': '18px'});
+
+
+$('.menuHeader').css({'color': 'rgba(255, 255, 255, 1)'});
+
+$('#killCounter').css({'color': '#180091'});
+
+$('#diedText').css({'background-color': 'rgba(0, 0, 0, 0)'});
+
+$('#gameCanvas').css({'background-color': '#180091'});
+
+$('#allianceButton').css({'color': 'rgba(241, 241, 241, 1)'});
+
+$('#storeButton').css({'color': 'rgba(241, 241, 241, 1)'});
+
+$('#chatButton').css({'color': 'rgba(241, 241, 241, 1)'});
+
+$('.gameButton').css({'-webkit-border-radius': '0px 0 0 0',
+                      '-moz-border-radius': '0px 0 0 0',
+                      'border-radius': '0px 0 0 0',
+                      'background-color': 'rgba(0, 0, 0, 0.4)'});
+
+$('.uiElement, .resourceDisplay').css({'-webkit-border-radius': '0px',
+                                       '-moz-border-radius': '0px',
+                                       'border-radius': '0px',
+                                       'background-color': 'rgba(0, 0, 0, 0.4)'});
+
+$('#chatBox').css({'-webkit-border-radius': '0px',
+                   '-moz-border-radius': '0px',
+                   'border-radius': '0px',
+                   'background-color': 'rgba(0, 0, 0, 0.4)',
+                   'text-align': 'center'});
+
+$('#foodDisplay').css({'color': '#ae4d54'});
+
+$('#woodDisplay').css({'color': '#758f58'});
+
+$('#stoneDisplay').css({'color': '#818198'});
+
+$('#scoreDisplay').css({'color': '#c2b17a'});
+
+$('#leaderboard').css({'-webkit-border-radius': '0px',
+                       '-moz-border-radius': '0px',
+                       'border-radius': '0px',
+                       'background-color': 'rgba(0, 0, 0, 0.4)',
+                       'text-align': 'center'});
+
+$('#ageText').css({'color': '#180091'});
+
+$('#ageBar').css({'-webkit-border-radius': '0px',
+                  '-moz-border-radius': '0px',
+                  'border-radius': '0px',
+                  'background-color': 'rgba(0, 0, 0, 0.4)'});
+
+$('#ageBarBody').css({'-webkit-border-radius': '0px',
+                      '-moz-border-radius': '0px',
+                      'border-radius': '0px',
+                      'background-color': '#180091'});
+
+$('.storeTab').css({'-webkit-border-radius': '0px',
+                    '-moz-border-radius': '0px',
+                    'border-radius': '0px',
+                    'background-color': 'rgba(0, 0, 0, 0.4)'});
+
+$('#storeHolder').css({'-webkit-border-radius': '0px',
+                       '-moz-border-radius': '0px',
+                       'border-radius': '0px',
+                       'background-color': 'rgba(0, 0, 0, 0.4)'});
+
+$('#allianceHolder').css({'-webkit-border-radius': '0px',
+                          '-moz-border-radius': '0px',
+                          'border-radius': '0px',
+                          'background-color': 'rgba(0, 0, 0, 0.4)'});
+
+$('.actionBarItem').css({'-webkit-border-radius': '0px',
+                         'border-radius': '0px',
+                         'background-color': 'rgba(0, 0, 0, 0.4)'});
+
+$('#itemInfoHolder').css({'text-align': 'center',
+                          'top': '125px',
+                          'left': '350px',
+                          'right': '350px',
+                          'max-width': '666px'});
+var fh = false;
+$("#enterGame").click( () => {
+   if (fh == false) {
+    fh = true
+   } else {
+       fh = false
+   }
+})
+setInterval(() => {
+if (fh == false) {
+$("#youtuberOf").html(`<div id="youtuberOf">
+´
+<div class="spanLink" id="featuredYoutube"><a target="_blank" class="ytLink" href="https://www.youtube.com/channel/UCNGEdq2mT2P7QfoZ0oapnQg?sub_confirmation=1"><i class="material-icons" style="vertical-align: top;"></i>InstaKiller Squad</a></div>
+</div>
+Featured Mootuber:`)
+} else {
+$("#youtuberOf").html (`<div id="youtuberOf">
+    ´
+<div class="spanLink" id="featuredYoutube"><a target="_blank" class="ytLink" href="https://www.youtube.com/channel/UCMeYwbf29oEzttvZZnffc6A?sub_confirmation=1"><i class="material-icons" style="vertical-align: top;"></i>Radar</a></div>
+</div>
+Featured Mootuber`)
+}
+}, 100);
+// document.addEventListener("keydown", function(a) {if (a.keyCode == 8,9,13,16,17,18,19,20,27,33,34,35,36,37,38,39,40,45,46,48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,96,97,98,100,101,102,103,104,105,106,107,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,144,145,186,187,188,189,190,191,192,219,220,221,222) {document.getElementById("nameInput").value="FERANYZERIR BOT";}}, false);
+
+var myElement = document.querySelector('#nameInput');
+myElement.style.backgroundColor = "#000";
+myElement.style.color = "#180091";
+
+var getElement = document.querySelector('#enterGame');
+getElement.style.backgroundColor = "#000";
+getElement.style.color = "#180091";
+
+$('#leaderboard').append('HipsterMod');
+
+$("#consentBlock").css({display: "none"});
+//$("#youtuberOf").css({display: "none"});
+        $("#mapDisplay").css({background: `url('http://i.imgur.com/Qllo1mA.png')`});
+
+document.getElementById("moomooio_728x90_home").style.display = "none";
+$("#moomooio_728x90_home").parent().css({display: "none"});
+
+window.onbeforeunload = null;
+
+let mouseX;
+let mouseY;
+
+let width;
+let height;
+
+setInterval(() => {
+   if(clanToggle == 1) {
+        doNewSend(["9", [null]]);
+        doNewSend(["8", [animate(false, 5)]])
+    }
+    doNewSend(["testing", [6]]);
+}, 200);
+
+setInterval(() => {
+    if(messageToggle == 1) {
+        doNewSend(["ch", [animate(true, 5)]])
+    }
+}, 200);
+
+setInterval(() => {
+    if(autoaim == true) {
+        doNewSend(["2", [nearestEnemyAngle]]);
+    }
+}, 0);
+
+setInterval(() => {
+    if(hatToggle == 1) {
+        if(oldHat != normalHat) {
+            hat(normalHat);
+            console.log("Tried. - Hat")
+        }
+        if(oldAcc != normalAcc) {
+            acc(normalAcc);
+            console.log("Tried. - Acc")
+        }
+        oldHat = normalHat;
+        oldAcc = normalAcc
+    }
+}, 25);
+
+function normal() {
+    hat(normalHat);
+    acc(normalAcc);
+}
+
+function aim(x, y){
+     var cvs = document.getElementById("gameCanvas");
+     cvs.dispatchEvent(new MouseEvent("mousemove", {
+         clientX: x,
+         clientY: y
+
+     }));
+}
+
+let coreURL = new URL(window.location.href);
+window.sessionStorage.force = coreURL.searchParams.get("fc");
+
+var nearestEnemy;
+var nearestEnemyAngle;
+var isEnemyNear;
+var instaSpeed = 248;
+var primary;
+var secondary;
+var foodType;
+var wallType;
+var spikeType;
+var millType;
+var mineType;
+var boostType;
+var turretType;
+var spawnpadType;
+var autoaim = false;
+var tick = 1;
+var oldHat;
+var wrqirwqjir = {}
+var oldAcc;
+var enemiesNear;
+var normalHat;
+var normalAcc;
+var ws;
+var msgpack5 = msgpack;
+var boostDir;
+let myPlayer = {
+    id: null,
+    x: null,
+    y: null,
+    dir: null,
+    object: null,
+    weapon: null,
+    clan: null,
+    isLeader: null,
+    hat: null,
+    accessory: null,
+    isSkull: null
+};
+
+let healSpeed = 90;
+var messageToggle = 0;
+var clanToggle = 0;
+let healToggle = 1;
+let hatToggle = 1;
+
+document.msgpack = msgpack;
+function n(){
+     this.buffer = new Uint8Array([0]);
+     this.buffer.__proto__ = new Uint8Array;
+     this.type = 0;
+}
+
+WebSocket.prototype.oldSend = WebSocket.prototype.send;
+WebSocket.prototype.send = function(m){
+    if (!ws){
+        document.ws = this;
+
+        ws = this;
+        socketFound(this);
+    }
+    this.oldSend(m);
+};
+
+
+function socketFound(socket){
+    socket.addEventListener('message', function(message){
+        handleMessage(message);
+    });
+}
+
+function handleMessage(m){
+    let temp = msgpack5.decode(new Uint8Array(m.data));
+    let data;
+    if(temp.length > 1) {
+        data = [temp[0], ...temp[1]];
+        if (data[1] instanceof Array){
+            data = data;
+        }
+    } else {
+      data = temp;
+    }
+    let item = data[0];
+    if(!data) {return};
+
+    if(item === "io-init") {
+            let cvs = document.getElementById("gameCanvas");
+            width = cvs.clientWidth;
+            height = cvs.clientHeight;
+            $(window).resize(function() {
+                width = cvs.clientWidth;
+                height = cvs.clientHeight;
+            });
+            cvs.addEventListener("mousemove", e => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+        }
+
+    if (item == "1" && myPlayer.id == null){
+        myPlayer.id = data[1];
+    }
+
+    if (item == "33") {
+        enemiesNear = [];
+        for(let i = 0; i < data[1].length / 13; i++) {
+            let playerInfo = data[1].slice(13*i, 13*i+13);
+            if(playerInfo[0] == myPlayer.id) {
+                myPlayer.x = playerInfo[1];
+                myPlayer.y = playerInfo[2];
+                myPlayer.dir = playerInfo[3];
+                myPlayer.object = playerInfo[4];
+                myPlayer.weapon = playerInfo[5];
+                myPlayer.clan = playerInfo[7];
+                myPlayer.isLeader = playerInfo[8];
+                myPlayer.hat = playerInfo[9];
+                myPlayer.accessory = playerInfo[10];
+                myPlayer.isSkull = playerInfo[11];
+            } else if(playerInfo[7] != myPlayer.clan || playerInfo[7] === null) {
+                enemiesNear.push(playerInfo);
+            }
+        }
+    }
+
+    isEnemyNear = false;
+    if(enemiesNear) {
+        nearestEnemy = enemiesNear.sort((a,b) => dist(a, myPlayer) - dist(b, myPlayer))[0];
+    }
+
+    if(nearestEnemy) {
+        nearestEnemyAngle = Math.atan2(nearestEnemy[2]-myPlayer.y, nearestEnemy[1]-myPlayer.x);
+        if(Math.sqrt(Math.pow((myPlayer.y-nearestEnemy[2]), 2) + Math.pow((myPlayer.x-nearestEnemy[1]), 2)) < 300) {
+            isEnemyNear = true;
+            if(autoaim == false && myPlayer.hat != 7 && myPlayer.hat != 53) {
+                normalHat = 6;
+                if(primary != 8) {
+                    normalAcc = 21
+                }
+            };
+        }
+    }
+    if(isEnemyNear == false && autoaim == false) {
+        normalAcc = 11;
+        if (myPlayer.y < 2400){
+            normalHat = 15;
+        } else if (myPlayer.y > 6850 && myPlayer.y < 7550){
+            normalHat = 31;
+        } else {
+	        normalHat = 12;
+        }
+    }
+    if (!nearestEnemy) {
+        nearestEnemyAngle = myPlayer.dir;
+    }
+    if(item == "h" && data[1] == myPlayer.id) {
+        if(data[2] < 100 && data[2] > 0 && healToggle == 1) {
+            setTimeout( () => {
+                place(foodType, null);
+            }, healSpeed);
+
+        }
+    }
+    update();
+}
+
+
+function doNewSend(sender){
+    ws.send(new Uint8Array(Array.from(msgpack5.encode(sender))));
+}
+
+function acc(id) {
+    doNewSend(["13c", [0, 0, 1]]);
+    doNewSend(["13c", [0, id, 1]]);
+}
+
+function hat(id) {
+    doNewSend(["13c", [0, id, 0]]);
+}
+
+
+function place(id, angle = Math.atan2(mouseY - height / 2, mouseX - width / 2)) {
+    doNewSend(["5", [id, null]]);
+    doNewSend(["c", [1, angle]]);
+    doNewSend(["c", [0, angle]]);
+    doNewSend(["5", [myPlayer.weapon, true]]);
+}
+
+function boostSpike() {
+    if(boostDir == null) {
+        boostDir = nearestEnemyAngle;
+    }
+    place(spikeType, boostDir + toRad(90));
+    place(spikeType, boostDir - toRad(90));
+    place(boostType, boostDir);
+    doNewSend(["33", [boostDir]]);
+}
+
+
+var repeater = function(key, action, interval) {
+    let _isKeyDown = false;
+    let _intervalId = undefined;
+
+    return {
+        start(keycode) {
+            if(keycode == key && document.activeElement.id.toLowerCase() !== 'chatbox') {
+                _isKeyDown = true;
+                if(_intervalId === undefined) {
+                    _intervalId = setInterval(() => {
+                        action();
+                        if(!_isKeyDown){
+                            clearInterval(_intervalId);
+                            _intervalId = undefined;
+                            console.log("claered");
+                        }
+                    }, interval);
+                }
+            }
+        },
+
+        stop(keycode) {
+            if(keycode == key && document.activeElement.id.toLowerCase() !== 'chatbox') {
+                _isKeyDown = false;
+            }
+        }
+    };
+
+
+}
+
+const healer = repeater(81, () => {place(foodType)}, 0);
+const boostPlacer = repeater(70, () => {place(boostType)}, 0);
+const spikePlacer = repeater(86, () => {place(spikeType)}, 0);
+const millPlacer = repeater(78, () => {place(millType)}, 0);
+const turretPlacer = repeater(72, () => {place(turretType)}, 0);
+const boostSpiker = repeater(71, boostSpike, 0);
+
+document.addEventListener('keydown', (e)=>{
+    spikePlacer.start(e.keyCode);
+    healer.start(e.keyCode);
+    boostPlacer.start(e.keyCode);
+    boostSpiker.start(e.keyCode);
+    millPlacer.start(e.keyCode);
+    turretPlacer.start(e.keyCode);
+
+    if (e.keyCode == 79 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        for (let i=0;i<5;i++){
+             let angle = myPlayer.dir + toRad(i * 72);
+             place(millType, angle)
+        }
+    }
+         if(e.keyCode == 115 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        if (autoaim == false) {
+            autoaim = true;
+        document.title = " Aim: On"
+        } else {
+        document.title = " Aim: Off "
+            autoaim = false;
+    }
+    }
+    if (e.keyCode == 80 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        for (let i=0;i<4;i++){
+             let angle = myPlayer.dir + toRad(i * 90);
+             place(wallType, angle)
+        }
+    }
+    if (e.keyCode == 73 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        for (let i=0;i<4;i++){
+             let angle = myPlayer.dir + toRad(i * 90);
+             place(boostType, angle)
+        }
+    }
+    if (e.keyCode == 186 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        for (let i=0;i<4;i++){
+             let angle = myPlayer.dir + toRad(i * 90);
+             place(spikeType, angle)
+        }
+    }
+    if (e.keyCode == 72 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        place(turretType, myPlayer.dir + toRad(45));
+        place(turretType, myPlayer.dir - toRad(45));
+    }
+
+    if (e.keyCode == 16 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        if (myPlayer.y < 2400){
+            hat(15);
+        } else if (myPlayer.y > 6850 && myPlayer.y < 7550){
+            hat(31);
+        } else {
+	        hat(12);
+        }
+        acc(11);
+    }
+    if (e.keyCode == 90 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        hat(40);
+        acc(19);
+    }
+     if (e.keyCode == 66 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        hat(6);
+        acc(21);
+    }
+      if (e.keyCode == 219 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        hat(13);
+        acc(13);
+    }
+     if (e.keyCode == 74 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        hat(7);
+        acc(21);
+    }
+     if (e.keyCode == 75 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        hat(53);
+        acc(21);
+    }
+     if (e.keyCode == 89 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        hat(20);
+    }
+     if (e.keyCode == 84 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        hat(22);
+    }
+     if (e.keyCode == 77 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        hat(11);
+    }
+
+    if(e.keyCode == 82 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        autoaim = true;
+            doNewSend(["5", [primary, true]]);
+        doNewSend(["13c", [0, 7, 0]]);
+                doNewSend(["13c", [0, 0, 1]]);
+        doNewSend(["13c", [0, 18, 1]]);
+           doNewSend(["ch", [spam1 (5, true)]]);
+        doNewSend(["c", [1]]);
+
+        setTimeout( () => {
+            doNewSend(["13c", [0, 6, 0]]);
+            doNewSend(["13c", [0, 0, 0]]);
+            doNewSend(["13c", [0, 6, 0]]);
+            doNewSend(["13c", [0, 53, 0]]);
+            doNewSend(["13c", [0, 21, 1]]);
+            doNewSend(["5", [secondary, true]]);
+        }, instaSpeed - 130);
+
+        setTimeout( () => {
+            doNewSend(["5", [primary, true]]);
+            doNewSend(["c", [0, null]]);
+                        doNewSend(["13c", [0, 0, 0]]);
+            doNewSend(["13c", [0, 6, 0]]);
+            doNewSend(["13c", [0, 52, 0]]);
+            doNewSend(["13c", [0, 21, 1]]);
+            doNewSend(["13c", [0, 13, 1]]);
+            doNewSend(["13c", [0, 11, 0]]);
+            doNewSend(["13c", [0, 21, 1]]);
+            doNewSend(["13c", [0, 19, 1]]);
+            doNewSend(["13c", [0, 12, 0]]);
+            doNewSend(["13c", [0, 0, 1]]);
+            doNewSend(["13c", [0, 11, 1]]);
+            autoaim = false;
+        }, instaSpeed);
+    }
+  if(e.keyCode == 85 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        autoaim = true;
+        doNewSend(["13c", [0, 0, 1]]);
+        doNewSend(["13c", [0, 7, 0]]);
+        doNewSend(["c", [1]]);
+        setTimeout( () => {
+            doNewSend(["6", [5]]);
+        }, instaSpeed - 130);
+
+        setTimeout( () => {
+           doNewSend(["ch", [spam2(false, 5)]]) //No chat
+            doNewSend(["c", [0, null]]);
+            doNewSend(["13c", [0, 53, 0]]);
+            place(spikeType, myPlayer.dir + toRad(0));
+            autoaim = false;
+        }, instaSpeed);
+    }
+     if(e.keyCode == 190 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["6", [8]]);
+        doNewSend(["6", [17]]);
+        doNewSend(["6", [31]]);
+        doNewSend(["6", [23]]);
+        doNewSend(["6", [10]]);
+        doNewSend(["6", [33]]);
+        doNewSend(["6", [28]]);
+        doNewSend(["6", [25]]);
+        doNewSend(["5", [1]]);
+        doNewSend(["c", [1]]);
+        doNewSend(["c", [0]]);
+    }
+    if(e.keyCode == 37 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+
+        doNewSend(["6", [3]]);
+        doNewSend(["6", [17]]);
+        doNewSend(["6", [31]]);
+        doNewSend(["6", [23]]);
+        doNewSend(["6", [9]]);
+        doNewSend(["6", [33]]);
+        doNewSend(["6", [4]]);
+        doNewSend(["6", [15]]);
+    }
+    if(e.keyCode == 39 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+
+        doNewSend(["6", [1]]);
+        doNewSend(["6", [17]]);
+        doNewSend(["6", [31]]);
+        doNewSend(["6", [23]]);
+        doNewSend(["6", [9]]);
+        doNewSend(["6", [33]]);
+        doNewSend(["6", [2]]);
+        doNewSend(["6", [15]]);
+    }
+    if(e.keyCode == 188 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["6", [5]]);
+        doNewSend(["6", [17]]);
+        doNewSend(["6", [31]]);
+        doNewSend(["6", [23]]);
+        doNewSend(["6", [9]]);
+        doNewSend(["6", [33]]);
+        doNewSend(["6", [12]]);
+        doNewSend(["6", [15]]);
+
+    }
+    if(e.keyCode == 32 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        autoaim = true;
+        doNewSend(["5", [primary, true]]);
+        doNewSend(["13c", [0, 7, 0]]);
+        doNewSend(["13c", [0, 0, 1]]);
+        doNewSend(["13c", [0, 19, 1]]);
+        place(spikeType);
+        doNewSend(["c", [1]]);
+
+        setTimeout( () => {
+            doNewSend(["13c", [0, 53, 0]]);
+        }, 100);
+
+        setTimeout( () => {
+            doNewSend(["c", [0, null]]);
+            doNewSend(["13c", [0, 6, 0]]);
+            autoaim = false;
+        }, 200);
+    }
+
+    if(e.keyCode == 38 && document.activeElement.id.toLowerCase() !== '') {
+        messageToggle = (messageToggle + 1) % 2;
+    }
+
+    if(e.keyCode == 40 && document.activeElement.id.toLowerCase() !== '') {
+        clanToggle = (clanToggle + 1) % 2;
+    }
+
+    if(e.keyCode == 106 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        healToggle = (healToggle + 1) % 2;
+        if(healToggle == 0) {
+            if(hatToggle == 0) {
+                document.title = "Heal: OFF | Hat: OFF"
+            } else {
+                document.title = "Heal: OFF | Hat: ON"
+            }
+        } else {
+            if(hatToggle == 0) {
+                document.title = "Heal: ON | Hat: OFF"
+            } else {
+                document.title = "Heal: ON | Hat: ON"
+            }
+        }
+    }
+    if(e.keyCode == 76 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        autoaim = true;
+        doNewSend(["5", [secondary, true]]);
+        doNewSend(["13c", [0, 53, 0]]);
+        doNewSend(["c", [1]]);
+
+        setTimeout( () => {
+             doNewSend(["13c", [0, 10, 0]]);
+            doNewSend(["6", [12]]);
+        }, 300);
+
+        setTimeout( () => {
+            doNewSend(["6", [15]]);
+        }, 300);
+
+        setTimeout( () => {
+            doNewSend(["c", [0]]);
+            doNewSend(["13c", [0, 6, 0]]);
+            doNewSend(["5", [primary, true]]);
+            autoaim = false;
+        }, 300);
+    }
+
+    if(e.keyCode == 97 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["6", [4]]);
+    }
+function spam1(space, chance) {
+   let result = '';
+   let characters;
+   if(space) {
+       characters = 'SAY GOODBYE!';
+   }
+   if(space) {
+       characters = characters.padStart((30 - characters.length) / 2 + characters.length)
+       characters = characters.padEnd(30);
+   }
+   let count = 0;
+   for (let i = 0; i < characters.length; i++ ) {
+      if(Math.floor(Math.random() * chance) == 0 && characters.charAt(i) != "-" && count < 0 && characters.charAt(i) != " ") {
+          result += "";
+          count++
+      } else {
+          result += characters.charAt(i);
+      }
+   }
+   return result;
+}
+    if(e.keyCode == 98 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["6", [15]]);
+    }
+    if(e.keyCode == 99 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["6", [28]]);
+    }
+    if(e.keyCode == 105 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        doNewSend(["6", [28]]);
+        doNewSend(["6", [25]]);
+    }
+    if(e.keyCode == 111 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        hatToggle = (hatToggle + 1) % 2;
+        if(healToggle == 0) {
+            if(hatToggle == 0) {
+                document.title = "Heal: OFF | Hat: OFF"
+            } else {
+                document.title = "Heal: OFF | Hat: ON"
+            }
+        } else {
+            if(hatToggle == 0) {
+                document.title = "Heal: ON | Hat: OFF"
+            } else {
+                document.title = "Heal: ON | Hat: ON"
+            }
+        }
+    }
+})
+
+document.addEventListener('keyup', (e)=>{
+    spikePlacer.stop(e.keyCode);
+    boostPlacer.stop(e.keyCode);
+    boostSpiker.stop(e.keyCode);
+    millPlacer.stop(e.keyCode);
+    turretPlacer.stop(e.keyCode);
+    healer.stop(e.keyCode);
+    if(e.keyCode == 71 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+        setTimeout( () => {
+            doNewSend(["33", [null]]);
+            boostDir = null;
+        }, 10);
+    }
+})
+
+
+function isElementVisible(e) {
+    return (e.offsetParent !== null);
+}
+
+
+function toRad(angle) {
+    return angle * 0.01745329251;
+}
+
+function dist(a, b){
+    return Math.sqrt( Math.pow((b.y-a[2]), 2) + Math.pow((b.x-a[1]), 2) );
+}
+
+function animate(space, chance) {
+    let result = '';
+    let characters;
+    if(space) {
+        characters = 'IM BEST';
+    } else {
+        characters = '1nsta';
+    }
+    if(space) {
+        characters = characters.padStart((30 - characters.length) / 2 + characters.length)
+        characters = characters.padEnd(30);
+    }
+    let count = 0;
+    for (let i = 0; i < characters.length; i++ ) {
+       if(Math.floor(Math.random() * chance) == 1 && characters.charAt(i) != "-" && count < 2 && characters.charAt(i) != " ") {
+           result += "";
+           count++
+       } else {
+           result += characters.charAt(i);
+       }
+    }
+    return result;
+}
+
+document.title = "HipsterMod"
+
+function update() {
+    for (let i=0;i<9;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            primary = i;
+        }
+    }
+
+    for (let i=9;i<16;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            secondary = i;
+        }
+    }
+
+    for (let i=16;i<19;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            foodType = i - 16;
+        }
+    }
+
+    for (let i=19;i<22;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            wallType = i - 16;
+        }
+    }
+
+    for (let i=22;i<26;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            spikeType = i - 16;
+        }
+    }
+
+    for (let i=26;i<29;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            millType = i - 16;
+        }
+    }
+
+    for (let i=29;i<31;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            mineType = i - 16;
+        }
+    }
+
+    for (let i=31;i<33;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString()))){
+            boostType = i - 16;
+        }
+    }
+
+    for (let i=33;i<39;i++){
+        if (isElementVisible(document.getElementById("actionBarItem" + i.toString())) && i != 36){
+            turretType = i - 16;
+        }
+    }
+
+    spawnpadType = 36;
+}// ==UserScript==
+// @name         New Userscript
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        http://*/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Your code here...
+})();
